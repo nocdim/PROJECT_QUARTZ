@@ -30,13 +30,13 @@ Batch files (.bat) (To connect different modules within the application)
 Стек, используемый для создания этого приложения:
 
 Внешний интерфейс:
-RRT --> ReactJS + Redux + Typescript
+RRT  --> ReactJS + Redux + Typescript
 
 Бэкэнд:
 NNET --> NodeJS + NestJS + экспресс + Typescript
 
 База данных:
-М --> МонгоДБ
+М    --> МонгоДБ
 
 Основная программа:
 1С:Предприятие
@@ -48,13 +48,13 @@ NNET --> NodeJS + NestJS + экспресс + Typescript
 이 앱을 만드는 데 사용된 스택:
 
 프런트엔드:
-RRT --> ReactJS + Redux + Typescript
+RRT  --> ReactJS + Redux + Typescript
 
 백엔드:
 NNET --> NodeJS + NestJS + 익스프레스 + Typescript
 
 데이터 베이스:
-M --> 몽고DB
+M    --> 몽고DB
 
 주요 프로그램:
 1C:엔터프라이즈
@@ -66,13 +66,13 @@ M --> 몽고DB
 用于创建此应用程序的堆栈：
 
 前端：
-RRT --> ReactJS + Redux + Typescript
+RRT  --> ReactJS + Redux + Typescript
 
 后端：
 NNET --> NodeJS + NestJS + Express + Typescript
 
 数据库：
-M --> MongoDB
+M    --> MongoDB
 
 主要程序：
 1C：企业
@@ -84,13 +84,13 @@ M --> MongoDB
 このアプリの作成に使用されたスタック:
 
 フロントエンド：
-RRT --> ReactJS + Redux + Typescript
+RRT  --> ReactJS + Redux + Typescript
 
 バックエンド:
 NNET --> NodeJS + NestJS + Express + Typescript
 
 データベース:
-M --> MongoDB
+M    --> MongoDB
 
 主なプログラム:
 1C:エンタープライズ
@@ -115,8 +115,10 @@ This application is for self purposes only. It is not supposed to be used by oth
 <b>10.07.2023</b> <br><br>
 Project created. Nothing special just standart templates for frontend, backend. No database. <br><br>
 <b>11.07.2023</b> <br><br>
-Started to shape a global 1C module. + created an external 1C app that will allow me to watch the changes made in 1C on the Website. <br><br>
+Started to shape a global 1C module. + created an external 1C app that will allow me to watch the changes made in 1C on the Website.
+Created an additional external 1C app for testing the primary app. <br><br>
 <b>... ... ... ... ...</b> <br><br>
 There is still more to come!
-
+<br><br>
+![alt text](https://github.com/nocdim/RRT-NNET-M_ChangeObserver_1C/blob/main/symbol_flag.png?raw=true)
 
