@@ -120,7 +120,8 @@ Created an additional external 1C app for testing the primary app. <br><br>
 <b>13.07.2023</b> <br><br>
 1C: testing external app for testing - structure reworked; global 1C module structure reworked.
 Also cleaned up a project a little bit. Gonna work on web part from now on. + added another .bat file for 
-future tests of a connection to the web-server.<br><br>
+future tests of a connection to the web-server. I'm trying to remember how does React work? + exploring unknown territory (Redux, TS) 
+<br><br>
 <b>... ... ... ... ...</b> <br><br>
 There is still more to come!
 <br><br>
