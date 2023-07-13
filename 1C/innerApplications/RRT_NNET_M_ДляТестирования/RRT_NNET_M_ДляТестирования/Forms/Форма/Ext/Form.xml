@@ -38,7 +38,7 @@
 			<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="14"/>
 		</InputField>
 		<InputField name="НаименованиеНоменклатурыEN" id="3">
-			<DataPath>Объект.НаименованиеНоменклатуры</DataPath>
+			<DataPath>Объект.НаименованиеНоменклатурыEN</DataPath>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>

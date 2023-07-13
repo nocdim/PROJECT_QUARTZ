@@ -60,11 +60,11 @@
 			</Attribute>
 			<Attribute uuid="bfc17c7e-8e76-4121-9b4e-42c512a56459">
 				<Properties>
-					<Name>НаименованиеНоменклатуры</Name>
+					<Name>НаименованиеНоменклатурыEN</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Наименование номенклатуры</v8:content>
+							<v8:content>Наименование номенклатуры EN</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

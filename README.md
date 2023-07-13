@@ -117,6 +117,8 @@ Project created. Nothing special just standart templates for frontend, backend. 
 <b>11.07.2023</b> <br><br>
 Started to shape a global 1C module. + created an external 1C app that will allow me to watch the changes made in 1C on the Website.
 Created an additional external 1C app for testing the primary app. <br><br>
+<b>13.07.2023</b> <br><br>
+1C: testing external app for testing - structure reworked; global 1C module structure reworked<br><br>
 <b>... ... ... ... ...</b> <br><br>
 There is still more to come!
 <br><br>
