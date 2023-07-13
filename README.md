@@ -121,7 +121,9 @@ Created an additional external 1C app for testing the primary app. <br><br>
 1C: testing external app for testing - structure reworked; global 1C module structure reworked.
 Also cleaned up a project a little bit. Gonna work on web part from now on. + added another .bat file for 
 future tests of a connection to the web-server. I'm trying to remember how does React work? + exploring unknown territory (Redux, TS) 
-<br><br>
+1C UPDATE: I just realized that my external testing app for 1C is incorrect.. (there is no for cycle...).
+So I think I'll create a new one based on the external app that I and others use while working. 
+I won't delete the old one from GitHub though. <br><br>
 <b>... ... ... ... ...</b> <br><br>
 There is still more to come!
 <br><br>
