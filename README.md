@@ -124,6 +124,9 @@ future tests of a connection to the web-server. I'm trying to remember how does 
 1C UPDATE: I just realized that my external testing app for 1C is incorrect.. (there is no for cycle...).
 So I think I'll create a new one based on the external app that I and others use while working. 
 I won't delete the old one from GitHub though. <br><br>
+<b>14.07.2023</b> <br><br>
+I want to finish 1c part. It's almost done. The whole process. Then probably gonna do
+.bat files. And then web. <br><br>
 <b>... ... ... ... ...</b> <br><br>
 There is still more to come!
 <br><br>
