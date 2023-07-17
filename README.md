@@ -127,6 +127,9 @@ I won't delete the old one from GitHub though. <br><br>
 <b>14.07.2023</b> <br><br>
 I want to finish 1c part. It's almost done. The whole process. Then probably gonna do
 .bat files. And then web. <br><br>
+<b>17.07.2023</b> <br><br>
+OK! Today I practiced some ~~TSX MAGIC~~. Started working on the FrontEnd part of the application. Did a lot of structuring..
+But it doesn't work properly. But It's ok, probably gonna restructurize the whole frontend anyway. But still today I made a huge step forward!<br><br>
 <b>... ... ... ... ...</b> <br><br>
 There is still more to come!
 <br><br>
