@@ -1,13 +1,18 @@
 // main page
 import React from 'react';
-import './styles/App.css';
+import './App.css';
+import { HOME_ROUTE } from './utils/consts';
+import { BrowserRouter } from 'react-router-dom';
+import AppRouter from './routes/appRouter';
+let logoPath = '../../../assets/triangle.png';
+let additionalLogoPath = '../../../assets/abbreviation.png';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Hello</h1>
-    </div>
-  );
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter>
+  )
 }
 
 export default App;
