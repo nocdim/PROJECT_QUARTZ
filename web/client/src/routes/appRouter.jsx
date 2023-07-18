@@ -6,15 +6,15 @@ const AppRouter = () => {
     let role = 'ADMIN'; //placeholder for now
     return (
         <Routes>
-            {role === 'ADMIN' && authAdminRoutes.map(({path, element}) => {
+            {role === 'ADMIN' && authAdminRoutes.map(({path, element}) => 
                 <Route key={path} exact path={path} element={element}/>
-            })}
-            {role === 'USER' && authUserRoutes.map(({path, element}) => {
+            )}
+            {role === 'USER' && authUserRoutes.map(({path, element}) => 
                 <Route key={path} exact path={path} element={element}/>
-            })}
-            {publicRoutes.map(({path, element}) => {
+            )}
+            {publicRoutes.map(({path, element}) => 
                 <Route key={path} exact path={path} element={element}/>
-            })}
+            )}
         </Routes>
     )    
 }
