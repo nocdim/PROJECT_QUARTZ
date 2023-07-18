@@ -10,11 +10,9 @@ export interface Logo {
 
 const Logotype = ({ logoImgSrc, link }: Logo) => {
     return (
-        <div className=''>
-            <Link to={link} className=''>
-                <img src={logoImgSrc}/>   
-            </Link>
-        </div>
+        <Link to={link} className='Logo'>
+            <img src={logoImgSrc} alt=''/>
+        </Link>
     )
 }
 

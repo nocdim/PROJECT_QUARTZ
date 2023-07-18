@@ -130,6 +130,8 @@ I want to finish 1c part. It's almost done. The whole process. Then probably gon
 <b>17.07.2023</b> <br><br>
 OK! Today I practiced some ~~TSX MAGIC~~. Started working on the FrontEnd part of the application. Did a lot of structuring..
 But it doesn't work properly. But It's ok, probably gonna restructurize the whole frontend anyway. But still today I made a huge step forward!<br><br>
+<b>18.07.2023</b> <br><br>
+Fixed a lot of bugs including the one that prevented JSX Elements from rendering. Fixed the webpack v4 --> v5 error. Started working on design of the app. I remember little to nothing about css, but I'm getting there! I have an idea of how the frontpage (or welcome page) should look like. Also I'm thinking about creating a separate folder with screenshots of the app, showing progress I'm making and how the app looks early in development. I think it's a great idea! I will also post some screenshots in this README file.<br><br>
 <b>... ... ... ... ...</b> <br><br>
 There is still more to come!
 <br><br>

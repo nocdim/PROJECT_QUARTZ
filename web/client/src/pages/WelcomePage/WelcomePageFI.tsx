@@ -7,10 +7,10 @@ interface WelcomePageTemplate extends PageTemplate {
 
 const WelcomePage = ({content, about}: WelcomePageTemplate) => {
     return (
-        <div>
+        <>
             {content}
             {about}
-        </div>
+        </>
     )
 }
 

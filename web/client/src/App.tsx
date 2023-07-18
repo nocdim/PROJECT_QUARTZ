@@ -6,9 +6,12 @@ import AppRouter from './routes/appRouter';
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <AppRouter />
-    </BrowserRouter>
+    <div className='App'>
+      <BrowserRouter>
+        <AppRouter />
+      </BrowserRouter>
+    </div>
+
   )
 }
 

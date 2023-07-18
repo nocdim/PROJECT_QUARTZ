@@ -2,18 +2,24 @@ import React from 'react';
 import WelcomingLogotype from '../../components/logo/WelcomingLogo/WelcomingLogoFI';
 
 import { HOME_ROUTE } from '../../utils/consts';
-let path = require('path');
-let logoImgSrc: string = __dirname;
-let additionalImgSrc: string = __dirname;
+const triangle = require('../../assets/triangle.png');
+const triangleRG = require('');
+const triangleRB = require('');
+const triangleBG = require('');
+const abbreviation = require('../../assets/abbreviation.png');
 
 const WelcomePageC = () => {
-    console.log(path)
     return (
-        <WelcomingLogotype 
-            logoImgSrc={logoImgSrc}
-            additionalImgSrc={additionalImgSrc}
-            link={HOME_ROUTE}
-        />
+        <div className='WelcomeScreen'>
+            <WelcomingLogotype
+                logoImgSrc={triangle}
+                RG={triangleRG}
+                RB={triangleRB}
+                BG={triangleBG}
+                additionalImgSrc={abbreviation}
+                link={HOME_ROUTE}
+            />
+        </div>
     )
 }
 

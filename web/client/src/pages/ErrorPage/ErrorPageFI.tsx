@@ -9,9 +9,9 @@ interface ErrorPageTemplate extends PageTemplate {
 
 const ErrorPage = ({content}: ErrorPageTemplate) => {
     return (
-        <div>
+        <>
             {content}
-        </div>
+        </>
     )
 }
 
