@@ -142,5 +142,6 @@ Slowly designing the application, currently stuck on the welcoming page. I made 
 <b>... ... ... ... ...</b> <br><br>
 There is still more to come!
 <br><br>
+
 ![alt text](https://github.com/nocdim/RRT-NNET-M_ChangeObserver_1C/blob/main/symbol_flag.png?raw=true)
 
