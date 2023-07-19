@@ -3,20 +3,18 @@ import WelcomingLogotype from '../../components/logo/WelcomingLogo/WelcomingLogo
 
 import { HOME_ROUTE } from '../../utils/consts';
 const triangle = require('../../assets/triangle.png');
-const triangleRG = require('');
-const triangleRB = require('');
-const triangleBG = require('');
-const abbreviation = require('../../assets/abbreviation.png');
+const triangleO = require('../../assets/triangleO.png');
+const triangleL = require('../../assets/triangleL.png');
+const triangleP = require('../../assets/triangleP.png');
 
 const WelcomePageC = () => {
     return (
         <div className='WelcomeScreen'>
             <WelcomingLogotype
                 logoImgSrc={triangle}
-                RG={triangleRG}
-                RB={triangleRB}
-                BG={triangleBG}
-                additionalImgSrc={abbreviation}
+                triangleO={triangleO}
+                triangleL={triangleL}
+                triangleP={triangleP}
                 link={HOME_ROUTE}
             />
         </div>

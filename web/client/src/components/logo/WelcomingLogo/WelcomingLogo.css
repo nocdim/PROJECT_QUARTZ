@@ -1,4 +1,73 @@
+.Container {
+    width: 750px;
+    height: 750px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wholeEntity {
+    position: inherit;
+    display: inherit;
+}
+
+.multiColoredTriangles {
+    position: inherit;
+    display: inherit;
+    opacity: 0%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.primaryTriangle {
+    position: inherit;
+    display: inherit;
+}
+
 .Abbreviature {
+    position: absolute !important;
+    z-index: 10;
+    opacity: 0%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.triangleO {
     position: absolute;
-    display: none;
+    z-index: 7;
+    display: block;
+    transition: margin 0.5s ease-in-out;
+}
+
+.triangleL {
+    position: absolute;
+    z-index: 8;
+    display: block;
+    transition: margin 0.5s ease-in-out;
+}
+
+.triangleP {
+    position: absolute;
+    z-index: 6;
+    display: block;
+    transition: margin 0.5s ease-in-out;
+}
+
+.wholeEntity:hover .multiColoredTriangles {
+    opacity: 33%;
+}
+
+.wholeEntity:hover .multiColoredTriangles .triangleO {
+    margin: 150px 150px 150px 150px;
+}
+
+.wholeEntity:hover .multiColoredTriangles .triangleL {
+    margin: -150px 0px 150px 0px;
+}
+
+.wholeEntity:hover .multiColoredTriangles .triangleP {
+    margin: 150px 150px 150px -150px;    
+}
+
+.Abbreviature:hover {
+    opacity: 100%;
 }

@@ -1,7 +1,4 @@
 img {
-    transition: transform 1s ease-in-out;
-}
-
-img:hover { 
-    transform: rotate(180deg);    
+    position: relative;
+    z-index: 9;
 }
