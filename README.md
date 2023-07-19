@@ -132,6 +132,8 @@ OK! Today I practiced some ~~TSX MAGIC~~. Started working on the FrontEnd part o
 But it doesn't work properly. But It's ok, probably gonna restructurize the whole frontend anyway. But still today I made a huge step forward!<br><br>
 <b>18.07.2023</b> <br><br>
 Fixed a lot of bugs including the one that prevented JSX Elements from rendering. Fixed the webpack v4 --> v5 error. Started working on design of the app. I remember little to nothing about css, but I'm getting there! I have an idea of how the frontpage (or welcome page) should look like. Also I'm thinking about creating a separate folder with screenshots of the app, showing progress I'm making and how the app looks early in development. I think it's a great idea! I will also post some screenshots in this README file.<br><br>
+<b>19.07.2023</b> <br><br>
+Slowly designing the application, currently stuck on the welcoming page. I made some animations for logo, I don't think this is the final result, but I'll leave it like that for a bit.<br><br>
 <b>... ... ... ... ...</b> <br><br>
 
 
