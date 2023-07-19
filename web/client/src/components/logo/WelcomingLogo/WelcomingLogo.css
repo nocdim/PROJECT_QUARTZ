@@ -24,13 +24,6 @@
     display: inherit;
 }
 
-.Abbreviature {
-    position: absolute !important;
-    z-index: 10;
-    opacity: 0%;
-    transition: opacity 0.5s ease-in-out;
-}
-
 .triangleO {
     position: absolute;
     z-index: 7;
@@ -66,8 +59,4 @@
 
 .wholeEntity:hover .multiColoredTriangles .triangleP {
     margin: 150px 150px 150px -150px;    
-}
-
-.Abbreviature:hover {
-    opacity: 100%;
 }
