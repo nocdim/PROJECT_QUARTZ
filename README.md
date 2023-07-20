@@ -140,20 +140,14 @@ Created development archive section. I'm planning on posting early build designs
 
 
 <h2>DEVELOPMENT ARCHIVE:</h2>
-
-<br><br> 
 Welcoming screen logo animation
 
 ![alt text](https://github.com/nocdim/RRT-NNET-M_ChangeObserver_1C/blob/main/developmentHistory/welcome_ani_200723.gif?raw=true)
 
 <br><br>
-
-<br><br> 
 Main page 20.07.2023
 
 ![alt text](https://github.com/nocdim/RRT-NNET-M_ChangeObserver_1C/blob/main/developmentHistory/homePage1.png?raw=true)
-
-<br><br>
 
 <br><br> 
 Some sketches
