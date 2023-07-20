@@ -134,10 +134,31 @@ But it doesn't work properly. But It's ok, probably gonna restructurize the whol
 Fixed a lot of bugs including the one that prevented JSX Elements from rendering. Fixed the webpack v4 --> v5 error. Started working on design of the app. I remember little to nothing about css, but I'm getting there! I have an idea of how the frontpage (or welcome page) should look like. Also I'm thinking about creating a separate folder with screenshots of the app, showing progress I'm making and how the app looks early in development. I think it's a great idea! I will also post some screenshots in this README file.<br><br>
 <b>19.07.2023</b> <br><br>
 Slowly designing the application, currently stuck on the welcoming page. I made some animations for logo, I don't think this is the final result, but I'll leave it like that for a bit.<br><br>
+<b>20.07.2023</b> <br><br>
+Created development archive section. I'm planning on posting early build designs of the app and different stuff like sketches an so on.<br><br>
 <b>... ... ... ... ...</b> <br><br>
 
 
 <h2>DEVELOPMENT ARCHIVE:</h2>
+
+<br><br> 
+
+![alt text](https://github.com/nocdim/RRT-NNET-M_ChangeObserver_1C/blob/main/developmentHistory/welcome_ani_200723.gif?raw=true)
+
+<br><br>
+
+<br><br> 
+
+![alt text](https://github.com/nocdim/RRT-NNET-M_ChangeObserver_1C/blob/main/developmentHistory/homePage1.png?raw=true)
+
+<br><br>
+
+<br><br> 
+
+![alt text](https://github.com/nocdim/RRT-NNET-M_ChangeObserver_1C/blob/main/developmentHistory/sketches_200723.png?raw=true)
+
+<br><br>
+
 <br><br>
 <b>... ... ... ... ...</b> <br><br>
 There is still more to come!
