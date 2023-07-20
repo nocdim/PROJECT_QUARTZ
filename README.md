@@ -158,7 +158,7 @@ Main page 20.07.2023
 <br><br> 
 Some sketches
 
-![alt text](https://github.com/nocdim/RRT-NNET-M_ChangeObserver_1C/blob/main/developmentHistory/sketches_200723.jpg?raw=true)
+![alt text](https://github.com/nocdim/RRT-NNET-M_ChangeObserver_1C/blob/main/developmentHistory/sketches_20072023.jpg?raw=true)
 
 <br><br>
 
