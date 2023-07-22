@@ -4,26 +4,20 @@ import { Logo } from '../LogoFI' // interface
 import Logotype from '../LogoFI'; // react component
 
 interface welcomingLogo extends Logo {
-    triangleO: string;
-    triangleL: string;
-    triangleP: string;
+    elements: string[];
 }
 
-const WelcomingLogotype = ({ link, logoImgSrc, triangleO, triangleL, triangleP }: welcomingLogo) => {
+const WelcomingLogotype = ({ link, logoImgSrc, elements }: welcomingLogo) => {
     return (
-            <div className='wholeEntity'>
-                <div className='multiColoredTriangles'>
-                    <img src={triangleO} alt='' className='triangleO' />
-                    <img src={triangleL} alt='' className='triangleL' />
-                    <img src={triangleP} alt='' className='triangleP' />
-                </div>
-                <div className='primaryTriangle'>
-                    <Logotype
-                        link={link}
-                        logoImgSrc={logoImgSrc}
-                    />
-                </div>
-            </div>  
+        <div>
+            {elements.map((element) => {
+                return (
+                    <div className='path'>
+                        <img src={element} alt='' />
+                    </div>
+                )
+            })}
+        </div>
     )
 }
 
