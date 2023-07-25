@@ -1,13 +1,7 @@
 import React from 'react';
-import { PageTemplate } from '../TemplateFI';
+import { IPageTemplate } from '../../interfaces/IPageTemplate';
 
-
-
-interface ErrorPageTemplate extends PageTemplate {
-
-}
-
-const ErrorPage = ({content}: ErrorPageTemplate) => {
+const ErrorPage = ({content}: IPageTemplate) => {
     return (
         <>
             {content}

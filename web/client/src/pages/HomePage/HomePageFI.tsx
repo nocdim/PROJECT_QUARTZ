@@ -1,11 +1,7 @@
 import React from 'react';
-import { PageTemplate } from '../TemplateFI';
+import { IPageTemplateExtended } from '../../interfaces/IPageTemplateExtended';
 
-interface HomePageTemplate extends PageTemplate {
-    sidebar: React.ReactNode;
-}
-
-const HomePage = ({navbar, content, footer, sidebar}: HomePageTemplate) => {
+const HomePage = ({navbar, content, footer, sidebar}: IPageTemplateExtended) => {
     return (
         <>
             {navbar}

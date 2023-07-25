@@ -1,12 +1,7 @@
 import React from 'react';
+import { IPageTemplate } from '../interfaces/IPageTemplate';
 
-export interface PageTemplate {
-    navbar?: React.ReactNode;
-    content: React.ReactNode;
-    footer?: React.ReactNode;
-}
-
-const Template = ({ navbar, content, footer }: PageTemplate) => {
+const Template = ({ navbar, content, footer }: IPageTemplate) => {
     if (navbar === undefined && footer === undefined) {
         return (
             <>

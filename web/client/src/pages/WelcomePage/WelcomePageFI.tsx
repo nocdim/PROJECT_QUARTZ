@@ -1,11 +1,7 @@
 import React from 'react';
-import { PageTemplate } from '../TemplateFI';
+import { IPageTemplateExtended } from '../../interfaces/IPageTemplateExtended';
 
-interface WelcomePageTemplate extends PageTemplate {
-    about: React.ReactNode;
-}
-
-const WelcomePage = ({content, about}: WelcomePageTemplate) => {
+const WelcomePage = ({content, about}: IPageTemplateExtended) => {
     return (
         <>
             {content}

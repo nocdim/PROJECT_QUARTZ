@@ -1,13 +1,8 @@
 import React from 'react';
 import './WelcomingLogo.css';
-import { Logo } from '../LogoFI' // interface
-import Logotype from '../LogoFI'; // react component
+import { IWelcomingLogo } from '../../../interfaces/IWelcomingLogo';
 
-interface welcomingLogo extends Logo {
-    elements: string[];
-}
-
-const WelcomingLogotype = ({ link, logoImgSrc, elements }: welcomingLogo) => {
+const WelcomingLogotype = ({ link, logoImgSrc, elements }: IWelcomingLogo) => {
     return (
         <div>
             {elements.map((element) => {
