@@ -148,15 +148,16 @@ So... There were no updates in a while so here we go! First of all, I decided to
 
 
 <h2>DEVELOPMENT ARCHIVE:</h2>
-Welcoming screen logo animation 20.07.2023
+<b>20.07.2023</b> <br><br>
+Welcoming screen logo animation
 
 ![alt text](https://github.com/nocdim/RRT-NNET-M_ChangeObserver_1C/blob/main/developmentHistory/welcome_ani_200723.gif?raw=true)
 
-Main page 20.07.2023
+Main page
 
 ![alt text](https://github.com/nocdim/RRT-NNET-M_ChangeObserver_1C/blob/main/developmentHistory/homePage1.png?raw=true)
 
-Some sketches 20.07.2023
+Some sketches
 
 ![alt text](https://github.com/nocdim/RRT-NNET-M_ChangeObserver_1C/blob/main/developmentHistory/sketches_20072023.jpg?raw=true)
 
