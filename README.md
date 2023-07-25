@@ -141,11 +141,14 @@ There's a lot of things that need changes. First of all, I need to understand th
 Right now it's just a mess of divs and other crap that needs to be removed. There are a lot of div blocks that are not necessary.
 Also I think of changing the main logo to something more creative than a triangle. I plan to include my YT Logo to give the logo some character.
 Working on the animations is hard, GODDAMN AMOGUS BRUH A<br><br>
+<b>25.07.2023</b> <br><br>
+So... There were no updates in a while so here we go! First of all, I decided to change the whole look of the web application. I want to make it a little bit more personal. But at the same time I need to create a new logo (vector logo), cuz I think my looks a bit outdated. Currently I'm working on a new logo design and learning how to make it with Adobe Illustrator. So there is a problem... I don't want to continue working on the app until I'm done with the logo, but sometimes my brain gets too smooth and I become too lazy to do anything. I think it might be some kind of mental illness. But here we are, I think on finishing the logo today and then move on and finally create a fully working ecosystem! LETS GOOOOOOOOOOOOOOOOOO
+<br><br>
 <b>... ... ... ... ...</b> <br><br>
 
 
 <h2>DEVELOPMENT ARCHIVE:</h2>
-Welcoming screen logo animation
+Welcoming screen logo animation 20.07.2023
 
 ![alt text](https://github.com/nocdim/RRT-NNET-M_ChangeObserver_1C/blob/main/developmentHistory/welcome_ani_200723.gif?raw=true)
 
@@ -153,7 +156,7 @@ Main page 20.07.2023
 
 ![alt text](https://github.com/nocdim/RRT-NNET-M_ChangeObserver_1C/blob/main/developmentHistory/homePage1.png?raw=true)
 
-Some sketches
+Some sketches 20.07.2023
 
 ![alt text](https://github.com/nocdim/RRT-NNET-M_ChangeObserver_1C/blob/main/developmentHistory/sketches_20072023.jpg?raw=true)
 
