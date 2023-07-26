@@ -3,7 +3,7 @@ import './WelcomingLogo.css';
 import { IWelcomingLogo } from '../../../interfaces/IWelcomingLogo';
 import { Link } from 'react-router-dom';
 
-const WelcomingLogotype = ({ link, logoImgSrc, elements }: IWelcomingLogo) => {
+const WelcomingLogotype = ({ link, logoImgSrc, addImg, elements }: IWelcomingLogo) => {
     // for 7 elements
     // 51.428571428571416
     let startingPoint = 0;
@@ -18,11 +18,18 @@ const WelcomingLogotype = ({ link, logoImgSrc, elements }: IWelcomingLogo) => {
             {elements.map((element) => {
                 startingPoint = startingPoint + angle;
                 return (
+                    <>
                     <div className='path' style={{ "--angle": startingPoint + "deg" } as React.CSSProperties}>
                         <div className='rotatingElementWrapper'>
                             <img src={element} alt='' className='rotatingElement' />
                         </div>
                     </div>
+                    <div className='path2' style={{ "--angle": startingPoint + "deg" } as React.CSSProperties}>
+                        <div className='rotatingElementWrapper'>
+                            <img src={element} alt='' className='rotatingElement' />
+                        </div>
+                    </div>
+                    </>
                 )
             })}
         </div>

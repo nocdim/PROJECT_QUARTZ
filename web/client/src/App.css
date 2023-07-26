@@ -6,6 +6,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(172,255,0);
-  background: radial-gradient(circle, rgba(172,255,0,0.4514180672268907) 0%, rgba(0,0,255,0) 35%, rgba(255,123,123,0.4206057422969187) 100%);
+  background: radial-gradient(circle, rgba(50,0,0,1) 50%, rgba(0,0,0,1) 100%);
 }

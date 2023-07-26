@@ -10,7 +10,7 @@
         position: absolute;
         width: 600px;
         height: 600px;
-        z-index: 9;
+        z-index: 15;
 
         .logo {
             position: absolute;
@@ -18,14 +18,13 @@
             width: 100%;
             height: 100%;
             scale: 1;
-            animation: none;
-            transition: scale 0.7s ease-in-out, animation 0.7s ease-in-out;
-            z-index: 11;
+            animation: changeHue 10s ease-in-out 0s infinite normal forwards;
+            filter: hue-rotate(0deg);
+            transition: scale 0.7s ease-in-out;
         }
 
         .logo:hover {
-            scale: 1.1;
-            animation: changeHue 10s ease-in-out 0s infinite normal forwards;
+            scale: 1.1;  
         }
     }
 
@@ -36,11 +35,11 @@
         align-items: center;
         width: 780px;
         height: 780px;
-        /*border: 1px solid rgba(0, 0, 0, 0.2);*/
+        z-index: 13;
+        border: 1px solid rgba(255, 255, 255, 0.4);
         
         transform: rotate(var(--angle));
-        z-index: 8;
-        animation: rotation 10s linear 0s infinite normal forwards;
+        animation: rotation 10s linear 0s infinite normal forwards, blur 2s linear 0s infinite normal forwards;
 
         .rotatingElementWrapper {
             position: absolute;
@@ -49,7 +48,36 @@
             margin: 0px 0px 0px 0px;
             opacity: 0%;
             transition: margin 1.3s ease-in-out, opacity 1.3s linear;
-            animation: blur 2s linear 0s infinite normal forwards;
+            z-index: 20;
+            .rotatingElement {
+                object-fit: contain;
+                width: 100%;
+                height: 100%;
+                opacity: 66%;
+            }
+        }
+    }
+
+    .path2 {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 780px;
+        height: 780px;
+        opacity: 10%;
+        z-index: 12;
+        
+        transform: rotate(var(--angle));
+        animation: rotationBackwards 10s linear 0s infinite normal forwards;
+
+        .rotatingElementWrapper {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            margin: 0px 0px 0px 0px;
+            opacity: 0%;
+            transition: margin 1.3s ease-in-out, opacity 1.3s linear;
             .rotatingElement {
                 object-fit: contain;
                 width: 100%;
@@ -57,15 +85,35 @@
             }
         }
     }
-    .entity:hover {
-        filter: invert(100%);
-    }
+
+
+    /*.addImg {
+        position: absolute; 
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        width: inherit;
+        height: inherit;
+        animation: septagram 10s linear 0s infinite normal backwards;
+        .septagram {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+            
+        } 
+    }*/
 }
 
-.entity:hover .rotatingElementWrapper {
+.entity:hover .path .rotatingElementWrapper {
     margin: 0px 0px 550px 550px;
     opacity: 100%;
 }
+
+.entity:hover .path2 .rotatingElementWrapper {
+    margin: 0px 0px 1000px 1000px;
+    opacity: 100%;
+}
+
 
 /* ANIMATIONS */
 
@@ -78,6 +126,26 @@
         transform: rotate(calc(var(--angle) + 360deg));
     }
 }
+
+@keyframes rotationBackwards {
+    0% {
+        transform: rotate(var(--angle));
+    }
+
+    100% {
+        transform: rotate(calc(var(--angle) + -360deg));
+    }
+}
+
+/*@keyframes septagram {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}*/
 
 @keyframes pulsation {
     0% {

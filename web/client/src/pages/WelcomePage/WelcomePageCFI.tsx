@@ -2,6 +2,7 @@ import React from 'react';
 import WelcomingLogotype from '../../components/logo/WelcomingLogo/WelcomingLogoFI';
 import { HOME_ROUTE } from '../../utils/consts';
 const logo = require("../../assets/logo.png");
+//const addImg = require("../../assets/heptagram.png");
 const e1 = require("../../assets/elements/element1.png");
 const e2 = require("../../assets/elements/element2.png");
 const e3 = require("../../assets/elements/element3.png");
