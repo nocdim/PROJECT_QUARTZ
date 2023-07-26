@@ -18,7 +18,7 @@
             width: 100%;
             height: 100%;
             scale: 1;
-            animation: changeHue 10s ease-in-out 0s infinite normal forwards;
+            animation: shake 2s ease 0s infinite normal forwards;
             filter: hue-rotate(0deg);
             transition: scale 0.7s ease-in-out;
         }
@@ -69,7 +69,7 @@
         z-index: 12;
         
         transform: rotate(var(--angle));
-        animation: rotationBackwards 10s linear 0s infinite normal forwards;
+        animation: rotationBackwards 30s linear 0s infinite normal forwards;
 
         .rotatingElementWrapper {
             position: absolute;
@@ -164,50 +164,50 @@
 	}
 }
 
-@keyframes changeHue {
+@keyframes shake {
     0% {
-        filter: hue-rotate(0deg);
-    }
+		transform: translate(0);
+	}
 
-    10% {
-        filter: hue-rotate(0deg);
-    }
+	10% {
+		transform: translate(-4px, -4px);
+	}
 
-    20% {
-        filter: hue-rotate(72deg);
-    }
+	20% {
+		transform: translate(4px, -4px);
+	}
 
-    30% {
-        filter: hue-rotate(72deg);
-    }
+	30% {
+		transform: translate(-4px, 4px);
+	}
 
-    40% {
-        filter: hue-rotate(144deg);
-    }
+	40% {
+		transform: translate(4px, 4px);
+	}
 
-    50% {
-        filter: hue-rotate(144deg);
-    }
+	50% {
+		transform: translate(-4px, -4px);
+	}
 
-    60% {
-        filter: hue-rotate(216deg);
-    }
+	60% {
+		transform: translate(4px, -4px);
+	}
 
-    70% {
-        filter: hue-rotate(216deg);
-    }
+	70% {
+		transform: translate(-4px, 4px);
+	}
 
-    80% {
-        filter: hue-rotate(288deg);
-    }
+	80% {
+		transform: translate(-4px, -4px);
+	}
 
-    90% {
-        filter: hue-rotate(288deg);
-    }
+	90% {
+		transform: translate(4px, -4px);
+	}
 
-    100% {
-        filter: hue-rotate(360deg);
-    }
+	100% {
+		transform: translate(0);
+	}
 }
 
 @keyframes blur {
