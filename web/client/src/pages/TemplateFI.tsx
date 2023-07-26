@@ -1,5 +1,6 @@
 import React from 'react';
 import { IPageTemplate } from '../interfaces/IPageTemplate';
+import Logotype from '../components/logo/LogoFI';
 
 const Template = ({ navbar, content, footer }: IPageTemplate) => {
     if (navbar === undefined && footer === undefined) {
@@ -12,7 +13,7 @@ const Template = ({ navbar, content, footer }: IPageTemplate) => {
         return (
             <>
                 <div>{content}</div>
-                <div>{footer}</div>
+                <div>{footer(Logotype,[])}</div>
             </>
         )
     } else if (navbar !== undefined && footer === undefined) {
@@ -27,7 +28,7 @@ const Template = ({ navbar, content, footer }: IPageTemplate) => {
             <>
                 <div>{navbar}</div>
                 <div>{content}</div>
-                <div>{footer}</div>
+                <div>{footer(Logotype,[])}</div>
             </>
         )
     }

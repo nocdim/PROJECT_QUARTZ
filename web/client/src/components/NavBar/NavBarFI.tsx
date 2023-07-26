@@ -1,6 +1,7 @@
 import React from 'react';
+import { INavBar } from '../../interfaces/INavBar';
 
-const NavBar = () => {
+const NavBar = ({logo, searchBar, isOpen}: INavBar) => {
     return (
         <div>NavBar</div>
     )

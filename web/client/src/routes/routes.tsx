@@ -12,6 +12,8 @@ import HomePageC from "../pages/HomePage/HomePageCFI";
 import ErrorPage from "../pages/ErrorPage/ErrorPageFI";
 import ErrorPageC from "../pages/ErrorPage/ErrorPageCFI";
 
+import { IFooter } from "../interfaces/IFooter";
+
 import {
     DEFAULT_ROUTE,
     HOME_ROUTE,
@@ -37,15 +39,15 @@ export const publicRoutes = [
             about={About()}
         />,
     },
-    {
+    /*{
         path: HOME_ROUTE,
         element: <HomePage 
-            navbar={NavBar()}
+            navbar={NavBar(<NavBar />)}
             content={HomePageC()}
             footer={Footer()}
             sidebar={SideBar()}
         />,
-    },
+    },*/
     {
         path: UNDEFINED_ROUTE,
         element: <ErrorPage 
