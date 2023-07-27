@@ -1,0 +1,23 @@
+.ToggleContainerfalse {
+    position: fixed;
+    top: 45px;
+    left: 60px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+    .togglefalse {
+      height: 80px;
+      width: 80px;
+      border: 1px solid white;
+      border-radius: 50%;
+    }
+  }
+  
+  .ToggleContainertrue {
+    .toggletrue {
+  
+    }
+  }

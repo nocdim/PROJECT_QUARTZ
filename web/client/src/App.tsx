@@ -7,11 +7,13 @@ import AppRouter from './routes/appRouter';
 const App = () => {
   const [theme, setTheme] = useState<boolean>(false); // default chaos theme
   return (
-    <div className={"App" + String(theme)}>
-      <BrowserRouter>
-        <AppRouter />
-      </BrowserRouter>
-    </div>
+    <>
+      <div className={"App" + String(theme)}>
+        <BrowserRouter>
+          <AppRouter />
+        </BrowserRouter>
+      </div>
+    </>
   )
 }
 
