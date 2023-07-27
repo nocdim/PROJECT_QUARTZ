@@ -147,6 +147,9 @@ So... There were no updates in a while so here we go! First of all, I decided to
 <b>26.07.2023</b> <br><br>
 I cba to explain what've done. Just messing with CSS.
 <br><br>
+<b>27.07.2023</b> <br><br>
+Alright, I had this interesting idea. I want to make a theme changer that will always be on display (toggle thingy) / or maybe just the welcoming page and options page(?). Basically there will be 3 options to choose from: (chaos theme, light theme, minimalist theme). Chaos theme I'm workin on right now (red/black colours, chaotic animations e.t.c.). Light theme is gonna be the opposite of chaos theme (blue/white colours, calm animations..). And the last one - minimalist theme (only white/black colours, light glitch animations..). The one thing that I'm not sure about is how it's gonna work. I think based on the specific option choosed I'm gonna pass different className to APP div block OR render different app div blocks.. Not sure. |||UPDATE|||: There will be 2 theme options instead of 3. I will eliminate the light theme.
+<br><br>
 <b>... ... ... ... ...</b> <br><br>
 
 

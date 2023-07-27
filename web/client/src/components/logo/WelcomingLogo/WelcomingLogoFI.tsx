@@ -7,7 +7,10 @@ const WelcomingLogotype = ({ link, logoImgSrc, addImg, elements }: IWelcomingLog
     // for 7 elements
     // 51.428571428571416
     let startingPoint = 0;
-    let angle = 360 / elements.length;
+    let angle = 0;
+    if (elements.length !== 0) {
+        angle = 360 / elements.length;
+    }
     return (
         <div className='entity'>
             <div className='wrapper'>
@@ -19,21 +22,22 @@ const WelcomingLogotype = ({ link, logoImgSrc, addImg, elements }: IWelcomingLog
                 startingPoint = startingPoint + angle;
                 return (
                     <>
-                    <div className='path' style={{ "--angle": startingPoint + "deg" } as React.CSSProperties}>
-                        <div className='rotatingElementWrapper'>
-                            <img src={element} alt='' className='rotatingElement' />
+                        <div className='path' style={{ "--angle": startingPoint + "deg" } as React.CSSProperties}>
+                            <div className='rotatingElementWrapper'>
+                                <img src={element} alt='' className='rotatingElement' />
+                            </div>
                         </div>
-                    </div>
-                    <div className='path2' style={{ "--angle": startingPoint + "deg" } as React.CSSProperties}>
-                        <div className='rotatingElementWrapper'>
-                            <img src={element} alt='' className='rotatingElement' />
+                        <div className='path2' style={{ "--angle": startingPoint + "deg" } as React.CSSProperties}>
+                            <div className='rotatingElementWrapper'>
+                                <img src={element} alt='' className='rotatingElement' />
+                            </div>
                         </div>
-                    </div>
                     </>
                 )
             })}
         </div>
     )
+
 }
 
 export default WelcomingLogotype;
