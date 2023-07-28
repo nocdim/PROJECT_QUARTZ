@@ -151,7 +151,7 @@ I cba to explain what've done. Just messing with CSS.
 Alright, I had this interesting idea. I want to make a theme changer that will always be on display (toggle thingy) / or maybe just the welcoming page and options page(?). Basically there will be 3 options to choose from: (chaos theme, light theme, minimalist theme). Chaos theme I'm workin on right now (red/black colours, chaotic animations e.t.c.). Light theme is gonna be the opposite of chaos theme (blue/white colours, calm animations..). And the last one - minimalist theme (only white/black colours, light glitch animations..). The one thing that I'm not sure about is how it's gonna work. I think based on the specific option choosed I'm gonna pass different className to APP div block OR render different app div blocks.. Not sure. |||UPDATE|||: There will be 2 theme options instead of 3. I will eliminate the light theme. |||ANOTHER UPDATE|||: <b>I'm getting to the point where redux knowledge is necessary.</b> So I'm gonna stop designing the interface and focus on the logic part of the web site. 
 <br><br>
 <b>28.07.2023</b> <br><br>
-I think I'm going to expand functionality of the app, I will rewrite the JS part of another app I made called <b>Node.js_1C</b> (repository is private) and implement it into the web app.
+I think I'm going to expand functionality of the app, I will rewrite the JS part of another app I made called <b>Node.js_1C</b> (repository is private) and implement it into the web app. In other news, design for the welcoming page is almost done, just need to make some little tweaks and the most important - <b>CREATE A LOGO</b>. 
 <br><br>
 <b>... ... ... ... ...</b> <br><br>
 
