@@ -1,11 +1,10 @@
 .ToggleContainerfalse {
     position: fixed;
-    top: 45px;
     left: 60px;
-    height: 100px;
-    width: 100px;
+    height: 100%;
+    width: 140px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     z-index: 30;
     .togglefalse {
