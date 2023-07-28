@@ -46,9 +46,8 @@ export const publicRoutes = [
     {
         path: HOME_ROUTE,
         element: <HomePage 
-            navbar={{
-                
-            }}
+            content={HomePageC()}
+            sidebar={SideBar()}
         />,
     },
     {
