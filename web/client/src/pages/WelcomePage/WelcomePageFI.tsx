@@ -5,7 +5,6 @@ const WelcomePage = ({content, about}: IPageTemplateExtended) => {
     return (
         <>
             {content}
-            {about}
         </>
     )
 }

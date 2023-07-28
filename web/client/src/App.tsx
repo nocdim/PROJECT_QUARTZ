@@ -13,7 +13,7 @@ const App = () => {
     <>
       <Toggle 
         img={imgForToggle}
-        theme={theme}
+        theme={!theme}
         onClick={() => setTheme(!theme)}
       />
       <div className={"App" + String(theme)}>

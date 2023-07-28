@@ -18,5 +18,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(circle, rgba(255,0,0,1) 50%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(666deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
+  background-size: 200% 200%;
+  animation: gradMove 5s ease infinite normal forwards;
+}
+
+@keyframes gradMove {
+  0% {
+    background-position:100% 100%;
+  }
+
+  50% {
+    background-position:0% 0%;
+  }
+
+  100% {
+    background-position:100% 100%;
+  }
 }

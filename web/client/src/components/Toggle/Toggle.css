@@ -1,22 +1,215 @@
 .ToggleContainerfalse {
+  position: fixed;
+  left: 60px;
+  height: 100%;
+  width: 140px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  z-index: 30;
+
+  .togglefalse {
+    height: 80px;
+    width: 80px;
+    animation: shake 2s ease 0s infinite normal forwards;
+  }
+
+  .path {
     position: fixed;
-    left: 60px;
-    height: 100%;
-    width: 140px;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
-    z-index: 30;
-    .togglefalse {
-      height: 80px;
-      width: 80px;
-      border: 1px solid white;
-      border-radius: 50%;
-    }
+    width: 77.5px;
+    height: 77.5px;
+    z-index: 1;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transform: rotate(var(--angle));
+    animation: rotation 10s linear 0s infinite normal forwards, blurInvert 5s linear 0s infinite normal forwards;
   }
-  
-  .ToggleContainertrue {
-    .toggletrue {
-  
-    }
+}
+
+.ToggleContainertrue {
+  position: fixed;
+  left: 60px;
+  height: 100%;
+  width: 140px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  z-index: 30;
+
+  .toggletrue {
+    height: 80px;
+    width: 80px;
+    filter: invert(0%);
+    transition: filter 0.7s ease-in-out;
+    animation: blinkingPulse 5s ease 0s infinite normal forwards;
   }
+
+  .toggletrue:hover {
+    filter: invert(100%);
+  }
+
+  .path {
+    display: none;
+  }
+}
+
+@keyframes rotation {
+  0% {
+      transform: rotate(var(--angle));
+  }
+
+  100% {
+      transform: rotate(calc(var(--angle) + 360deg));
+  }
+}
+
+@keyframes blurInvert {
+  0% {
+      filter: blur(2px) invert(100%);
+  }
+
+  5% {
+      filter: blur(2px);
+  }
+
+  10% {
+      filter: blur(2px);
+  }
+
+  15% {
+      filter: blur(0px);
+  }
+
+  20% {
+      filter: blur(0px);
+  }
+
+  25% {
+      filter: blur(5px);
+  }
+
+  30% {
+      filter: blur(1px);
+  }
+
+  35% {
+      filter: blur(0px);
+  }
+
+  40% {
+      filter: blur(1px);
+  }
+
+  45% {
+      filter: blur(0px);
+  }
+
+  50% {
+      filter: blur(0px) invert(0%);
+  }
+
+  55% {
+      filter: blur(2px);
+  }
+
+  60% {
+      filter: blur(0px);
+  }
+
+  65% {
+      filter: blur(3px);
+  }
+
+  70% {
+      filter: blur(0px);
+  }
+
+  75% {
+      filter: blur(0px);
+  }
+
+  80% {
+      filter: blur(1px);
+  }
+
+  85% {
+      filter: blur(3px);
+  }
+
+  90% {
+      filter: blur(2px);
+  }
+
+  95% {
+      filter: blur(0px);
+  }
+
+  100% {
+      filter: blur(2px) invert(100%);
+  }
+}
+
+@keyframes shake {
+  0% {
+      transform: translate(0);
+  }
+
+  10% {
+      transform: translate(-2px, -2px);
+  }
+
+  20% {
+      transform: translate(2px, -2px);
+  }
+
+  30% {
+      transform: translate(-2px, 2px);
+  }
+
+  40% {
+      transform: translate(2px, 2px);
+  }
+
+  50% {
+      transform: translate(-2px, -2px);
+  }
+
+  60% {
+      transform: translate(2px, -2px);
+  }
+
+  70% {
+      transform: translate(-2px, 2px);
+  }
+
+  80% {
+      transform: translate(-2px, -2px);
+  }
+
+  90% {
+      transform: translate(2px, -2px);
+  }
+
+  100% {
+      transform: translate(0);
+  }
+}
+
+@keyframes blinkingPulse {
+  0% {
+  opacity: 0.2;
+      transform: scale(1);
+}
+
+50% {
+  opacity: 1;
+      transform: scale(1.1);
+}
+
+100% {
+  opacity: 0.2;
+      transform: scale(1);
+}
+}
