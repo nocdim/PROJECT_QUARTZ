@@ -2,6 +2,8 @@ import NavBar from "../components/NavBar/NavBarFI";
 import Footer from "../components/Footer/FooterFI";
 import About from "../components/About/AboutFI";
 import SideBar from "../components/SideBar/SideBarFI";
+import Logotype from "../components/logo/LogoFI";
+import SearchBar from "../components/SearchBar/SearchBar";
 
 import WelcomePage from "../pages/WelcomePage/WelcomePageFI";
 import WelcomePageC from "../pages/WelcomePage/WelcomePageCFI";
@@ -21,6 +23,8 @@ import {
     UNDEFINED_ROUTE,
 } from '../utils/consts.js';
 
+const logoImg = require("../assets/logo.png");
+
 ////////////////////////////////////////////////////////////////////////////////
 
 export const authAdminRoutes = [
@@ -39,15 +43,14 @@ export const publicRoutes = [
             about={About()}
         />,
     },
-    /*{
+    {
         path: HOME_ROUTE,
         element: <HomePage 
-            navbar={NavBar(<NavBar />)}
-            content={HomePageC()}
-            footer={Footer()}
-            sidebar={SideBar()}
+            navbar={{
+                
+            }}
         />,
-    },*/
+    },
     {
         path: UNDEFINED_ROUTE,
         element: <ErrorPage 
