@@ -25,6 +25,7 @@
     border: 1px solid rgba(255, 255, 255, 0.4);
     transform: rotate(var(--angle));
     animation: rotation 10s linear 0s infinite normal forwards, blurInvert 5s linear 0s infinite normal forwards;
+    cursor: pointer;
   }
 }
 
@@ -44,6 +45,7 @@
     filter: invert(0%);
     transition: filter 0.7s ease-in-out;
     animation: blinkingPulse 5s ease 0s infinite normal forwards;
+    cursor: pointer;
   }
 
   .toggletrue:hover {
