@@ -153,6 +153,9 @@ Alright, I had this interesting idea. I want to make a theme changer that will a
 <b>28.07.2023</b> <br><br>
 I think I'm going to expand functionality of the app, I will rewrite the JS part of another app I made called <b>Node.js_1C</b> (repository is private) and implement it into the web app. In other news, design for the welcoming page is almost done, just need to make some little tweaks and the most important - <b>CREATE A LOGO</b>. 
 <br><br>
+<b>31.07.2023</b> <br><br>
+Little changes on the frontend part. Also I'm thinking about making an options page, that will allow users to set the page to default view (it does not even exist), because I noticed that some browsers <b>DO NOT SUPPORT</b> animations I'm using right now. <b> So the key moment of this idea is to allow users to see all the necessary information properly without having troubles navigating throught the interface. </b>
+<br><br>
 <b>... ... ... ... ...</b> <br><br>
 
 
