@@ -3,13 +3,18 @@ import './WelcomingLogo.css';
 import { IWelcomingLogo } from '../../../interfaces/IWelcomingLogo';
 import { Link } from 'react-router-dom';
 
-const WelcomingLogotype = ({ link, logoImgSrc, addImg, elements }: IWelcomingLogo) => {
+const WelcomingLogotype = ({ link, logoImgSrc, addImg, abbreviation, elements }: IWelcomingLogo) => {
     // for 7 elements
     // 51.428571428571416
-    let startingPoint = 0;
-    let angle = 0;
+    let startingPointElem = 0;
+    let startingPointAbb = 0;
+    let angleElem = 0;
+    let angleAbb = 0;
     if (elements.length !== 0) {
-        angle = 360 / elements.length;
+        angleElem = 360 / elements.length;
+    }
+    if (abbreviation.length !== 0) {
+        angleAbb = 360 / abbreviation.length;  
     }
     return (
         <div className='entity'>
@@ -19,17 +24,24 @@ const WelcomingLogotype = ({ link, logoImgSrc, addImg, elements }: IWelcomingLog
                 </Link>
             </div>
             {elements.map((element) => {
-                startingPoint = startingPoint + angle;
+                startingPointElem = startingPointElem + angleElem;
                 return (
                     <>
-                        <div className='path' style={{ "--angle": startingPoint + "deg" } as React.CSSProperties}>
+                        <div className='path2' style={{ "--angle": -startingPointElem + "deg" } as React.CSSProperties}>
                             <div className='rotatingElementWrapper'>
-                                <img src={element} alt='' className='rotatingElement' />
+                                <p className='rotatingElement' style={{ "--angle": -angleElem + "deg" } as React.CSSProperties }>{element}</p>
                             </div>
-                        </div>
-                        <div className='path2' style={{ "--angle": startingPoint + "deg" } as React.CSSProperties}>
-                            <div className='rotatingElementWrapper'>
-                                <img src={element} alt='' className='rotatingElement' />
+                        </div> 
+                    </>
+                )
+            })}
+            {abbreviation.map((letter) => {
+                startingPointAbb = startingPointAbb + angleAbb;
+                return (
+                    <>
+                        <div className='path' style={{ "--angle": -startingPointAbb + "deg" } as React.CSSProperties}>
+                            <div className='rotatingElementWrapperAbb'>
+                                <p className='rotatingElementAbb' style={{ "--angle": -angleAbb + "deg",  } as React.CSSProperties}>{letter}</p>
                             </div>
                         </div>
                     </>
@@ -37,7 +49,6 @@ const WelcomingLogotype = ({ link, logoImgSrc, addImg, elements }: IWelcomingLog
             })}
         </div>
     )
-
 }
 
 export default WelcomingLogotype;
