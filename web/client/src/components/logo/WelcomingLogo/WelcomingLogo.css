@@ -65,8 +65,8 @@
             display: flex;
             justify-content: center;
             align-items: flex-end;
-            width: 780px;
-            height: 780px;
+            width: 100px;
+            height: 100px;
             opacity: 0.666;
             z-index: 12;
 
@@ -82,8 +82,9 @@
                 transition: margin 1.3s ease-in-out, opacity 1.3s linear;
 
                 .rotatingElement {
-                    font-size: 250px;
-                    font-family: 'Montserrat Alternates', sans-serif;
+                    font-size: 70px;
+                    font-family: 'Inconsolata', monospace;
+                    color: #f00;
                     font-weight: 500;
                     z-index: 19;
                     transform: rotate(var(--angle));
@@ -115,8 +116,9 @@
     }
 
     .entity:hover .path2 .rotatingElementWrapper {
-        margin: 0px 0px 195px 195px;
+        margin: 1200px 1200px 0px 0px;
         opacity: 100%;
+        font-family: 'Inconsolata', monospace !important;
     }
 
 }
