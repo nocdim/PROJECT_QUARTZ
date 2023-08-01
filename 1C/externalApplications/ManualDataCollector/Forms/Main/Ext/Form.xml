@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<WindowOpeningMode>LockWholeInterface</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="Группа3" id="21">
+			<HorizontalStretch>true</HorizontalStretch>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="22"/>
+			<ChildItems>
+				<LabelDecoration name="Name" id="18">
+					<Font faceName="Ebrima" height="22" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>PROJECT_QUARTZ</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<ContextMenu name="NameКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="NameРасширеннаяПодсказка" id="20"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа4" id="28">
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<LabelDecoration name="MadeBy" id="25">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Made by nocdim / nokkudimu</v8:content>
+						</v8:item>
+					</Title>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<VerticalAlign>Center</VerticalAlign>
+					<ContextMenu name="MadeByКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="MadeByРасширеннаяПодсказка" id="27"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="РазделительШ" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разделитель Ш</v8:content>
+				</v8:item>
+			</ToolTip>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<GroupVerticalAlign>Center</GroupVerticalAlign>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<VerticalAlign>Center</VerticalAlign>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="РазделительШРасширеннаяПодсказка" id="24"/>
+			<ChildItems>
+				<LabelDecoration name="Декорация1" id="30">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>-----------------------------------------------------------------------------------------</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="32"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="1">
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<InputField name="ТипДокумента" id="3">
+					<DataPath>Объект.ТипДокумента</DataPath>
+					<ContextMenu name="ТипДокументаКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ТипДокументаРасширеннаяПодсказка" id="5"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Дата" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="7"/>
+			<ChildItems>
+				<InputField name="ДатаОт" id="8">
+					<DataPath>Объект.ДатаОт</DataPath>
+					<ContextMenu name="ДатаОтКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ДатаОтРасширеннаяПодсказка" id="10"/>
+				</InputField>
+				<InputField name="ДатаДо" id="11">
+					<DataPath>Объект.ДатаДо</DataPath>
+					<ContextMenu name="ДатаДоКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ДатаДоРасширеннаяПодсказка" id="13"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Режим" id="38">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим</v8:content>
+				</v8:item>
+			</ToolTip>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<GroupVerticalAlign>Center</GroupVerticalAlign>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<VerticalAlign>Center</VerticalAlign>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="РежимРасширеннаяПодсказка" id="39"/>
+			<ChildItems>
+				<CheckBoxField name="ИспользоватьТолькоОсновныеФильтры" id="40">
+					<DataPath>Объект.РежимРаботы</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использовать только основные фильтры</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип документа + Дата</v8:content>
+						</v8:item>
+					</ToolTip>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИспользоватьТолькоОсновныеФильтрыКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ИспользоватьТолькоОсновныеФильтрыРасширеннаяПодсказка" id="42"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="РазделительШ1" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разделитель Ш</v8:content>
+				</v8:item>
+			</ToolTip>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<GroupVerticalAlign>Center</GroupVerticalAlign>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<VerticalAlign>Center</VerticalAlign>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="РазделительШ1РасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<LabelDecoration name="Декорация2" id="35">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>-----------------------------------------------------------------------------------------</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="Декорация2КонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="37"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<CommandBar name="Группа2" id="14">
+			<HorizontalLocation>Center</HorizontalLocation>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="15"/>
+			<ChildItems>
+				<Button name="СобратьИнформацию" id="16">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.СобратьИнформацию</CommandName>
+					<ExtendedTooltip name="СобратьИнформациюРасширеннаяПодсказка" id="17"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ManualDataCollector</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СобратьИнформацию" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Собрать информацию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Собрать информацию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СобратьИнформацию</Action>
+		</Command>
+	</Commands>
+</Form>
