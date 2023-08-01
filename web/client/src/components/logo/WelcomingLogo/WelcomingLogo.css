@@ -79,7 +79,7 @@
                 height: 0px;
                 margin: 0px 0px 0px 0px;
                 opacity: 0%;
-                transition: margin 1.3s ease-in-out, opacity 1.3s linear;
+                transition: margin 2.5s ease-in-out, opacity 2s ease-out;
 
                 .rotatingElement {
                     font-size: 70px;
