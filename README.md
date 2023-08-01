@@ -163,11 +163,10 @@ I've had this idea for a long time now.. I want to make this app serve a lot of 
 
 
 <h2>DEVELOPMENT ARCHIVE:</h2>
-(This is where I post screenshots of the application and other different stuff that I'm working on, so you can see the progress..)
+(This is where I post screenshots of the application and other different stuff that I'm working on, so you can see the progress..)<br><br>
 
 
-<b>THIS SECTION WILL BE FILLED WHEN THE PROJECT IS NEAR COMPLITION</b> <br><br>
-
+<b>THIS SECTION WILL BE FILLED WHEN THE PROJECT IS NEAR COMPLETION</b> <br><br>
 <b>... ... ... ... ...</b> <br><br>
 There is still more to come!
 <br><br>
