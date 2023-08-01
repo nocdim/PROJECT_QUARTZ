@@ -1,24 +1,24 @@
 ![alt text](https://github.com/nocdim/RRT-NNET-M_ChangeObserver_1C/blob/main/RRT-NNET-M.png?raw=true)
 <br>
-# *RRT-NNET-M_ChangeObserver_1C*
-An application that writes changes made by external 1C applications. <br>
-Приложение, которое записывает изменения, сделанные внешними обработками 1С. <br>
-외부 1C 응용 프로그램의 변경 사항을 작성하는 응용 프로그램입니다. <br>
-写入外部 1C 应用程序所做的更改的应用程序。<br>
-外部 1C アプリケーションによって行われた変更を書き込むアプリケーション。 <br>
+# *PROJECT_QUARTZ*
+A multitask application that helps collect data primarily from 1C:Enterprise, also supports the collecting of data from specific web-sites. <br>
+Приложение, которое записывает данные преимущественно из программы 1С:Предприятие, но также поддерживает сбор информации с определенных веб-сайтов.  <br>
+주로 1C:Enterprise에서 데이터를 수집하는 데 도움이 되는 멀티태스킹 애플리케이션은 특정 웹 사이트에서 데이터 수집도 지원합니다. <br>
+多任务应用程序主要帮助从 1C:Enterprise 收集数据，还支持从特定网站收集数据。<br>
+主に 1C:Enterprise からのデータ収集を支援するマルチタスク アプリケーションは、特定の Web サイトからのデータ収集もサポートします。 <br>
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Stack used to create this app:
 
 FrontEnd:
-RRT  --> ReactJS + Redux + Typescript
+ReactJS + Redux + Typescript
 
 BackEnd:
-NNET --> NodeJS + NestJS + express + Typescript
+NodeJS + NestJS + express + Typescript
 
 Database:
-M    --> MongoDB
+MongoDB
 
 Main program:
 1C:Enterprise
@@ -30,13 +30,13 @@ Batch files (.bat) (To connect different modules within the application)
 Стек, используемый для создания этого приложения:
 
 Внешний интерфейс:
-RRT  --> ReactJS + Redux + Typescript
+ReactJS + Redux + Typescript
 
 Бэкэнд:
-NNET --> NodeJS + NestJS + экспресс + Typescript
+NodeJS + NestJS + экспресс + Typescript
 
 База данных:
-М    --> МонгоДБ
+МонгоДБ
 
 Основная программа:
 1С:Предприятие
@@ -48,13 +48,13 @@ NNET --> NodeJS + NestJS + экспресс + Typescript
 이 앱을 만드는 데 사용된 스택:
 
 프런트엔드:
-RRT  --> ReactJS + Redux + Typescript
+ReactJS + Redux + Typescript
 
 백엔드:
-NNET --> NodeJS + NestJS + 익스프레스 + Typescript
+NodeJS + NestJS + 익스프레스 + Typescript
 
 데이터 베이스:
-M    --> 몽고DB
+몽고DB
 
 주요 프로그램:
 1C:엔터프라이즈
@@ -66,13 +66,13 @@ M    --> 몽고DB
 用于创建此应用程序的堆栈：
 
 前端：
-RRT  --> ReactJS + Redux + Typescript
+ReactJS + Redux + Typescript
 
 后端：
-NNET --> NodeJS + NestJS + Express + Typescript
+NodeJS + NestJS + Express + Typescript
 
 数据库：
-M    --> MongoDB
+MongoDB
 
 主要程序：
 1C：企业
@@ -84,13 +84,13 @@ M    --> MongoDB
 このアプリの作成に使用されたスタック:
 
 フロントエンド：
-RRT  --> ReactJS + Redux + Typescript
+ReactJS + Redux + Typescript
 
 バックエンド:
-NNET --> NodeJS + NestJS + Express + Typescript
+NodeJS + NestJS + Express + Typescript
 
 データベース:
-M    --> MongoDB
+MongoDB
 
 主なプログラム:
 1C:エンタープライズ
@@ -105,7 +105,7 @@ This application is for self purposes only. It is not supposed to be used by oth
 このアプリケーションは個人的な目的のみに使用されます。 他人が使用するものではありません！<br>
 
 
-# *RRT-NNET-M_ChangeObserver_1C LOG* 
+# *PROJECT_QUARTZ LOG* 
 (This is where I keep writing my updates on the application...)
 
 
@@ -156,21 +156,18 @@ I think I'm going to expand functionality of the app, I will rewrite the JS part
 <b>31.07.2023</b> <br><br>
 Little changes on the frontend part. Also I'm thinking about making an options page, that will allow users to set the page to default view (it does not even exist), because I noticed that some browsers <b>DO NOT SUPPORT</b> animations I'm using right now. So the key moment of this idea is to allow users to see all the necessary information properly without having troubles navigating through the interface. Or the better solution is to on will <b>disable the animations completely.</b> ////////// Also another note I want this web application to be an executable, so like a PC app. That would be cool. I consider using <b>electron</b> for this. ////////// I decided to change images to text because loading a bunch of images could lead to potential problems and troubleshooting. Now the CHAOS theme looks even more CHAOTIC.
 <br><br>
+<b>01.08.2023</b> <br><br>
+I've had this idea for a long time now.. I want to make this app serve a lot of different purposes instead of a single one, that I planned on (observing changes). So now the project will be called <b>"PROJECT QUARTZ"</b>. The name is completely random, I just thought of cool looking words and eventually stumbled upon "QUARTZ" (It's my favourite rock from childhood. Mesmerizing... (I have mental problems xDDDDDDDDDDDDDDD )). Today I will probably just change the readme file and make small adjustments to the design.
+<br><br>
 <b>... ... ... ... ...</b> <br><br>
 
 
 <h2>DEVELOPMENT ARCHIVE:</h2>
-<b>20.07.2023</b> <br><br>
+(This is where I post screenshots of the application and other different stuff that I'm working on, so you can see the progress..)
 
-Welcoming screen logo animation
 
-![alt text](https://github.com/nocdim/RRT-NNET-M_ChangeObserver_1C/blob/main/developmentHistory/welcome_ani_200723.gif?raw=true)
+<b>THIS SECTION WILL BE FILLED WHEN THE PROJECT IS NEAR COMPLITION</b> <br><br>
 
-Main page
-
-![alt text](https://github.com/nocdim/RRT-NNET-M_ChangeObserver_1C/blob/main/developmentHistory/homePage1.png?raw=true)
-
-<br><br>
 <b>... ... ... ... ...</b> <br><br>
 There is still more to come!
 <br><br>
