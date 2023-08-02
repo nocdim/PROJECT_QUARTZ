@@ -121,6 +121,8 @@
 							<v8:content>Смены чеки ОФД</v8:content>
 						</v8:item>
 					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
 					<ExtendedTooltip name="СменыЧеки_ОФДРасширеннаяПодсказка" id="46"/>
 					<ChildItems>
 						<UsualGroup name="ОсновныеРеквизиты" id="52">
@@ -631,6 +633,57 @@
 						</Pages>
 					</ChildItems>
 				</Page>
+				<Page name="Группа7" id="213">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проставить вид цен для _Распределение</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<VerticalAlign>Center</VerticalAlign>
+					<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="214"/>
+					<ChildItems>
+						<UsualGroup name="Группа8" id="215">
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<VerticalAlign>Center</VerticalAlign>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="216"/>
+							<ChildItems>
+								<InputField name="Партнер" id="217">
+									<DataPath>Объект.Партнер</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<ContextMenu name="ПартнерКонтекстноеМеню" id="218"/>
+									<ExtendedTooltip name="ПартнерРасширеннаяПодсказка" id="219"/>
+								</InputField>
+								<InputField name="Организация1" id="220">
+									<DataPath>Объект.Организация</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<ContextMenu name="Организация1КонтекстноеМеню" id="221"/>
+									<ExtendedTooltip name="Организация1РасширеннаяПодсказка" id="222"/>
+								</InputField>
+								<InputField name="Соглашение" id="223">
+									<DataPath>Объект.Соглашение</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<ContextMenu name="СоглашениеКонтекстноеМеню" id="224"/>
+									<ExtendedTooltip name="СоглашениеРасширеннаяПодсказка" id="225"/>
+									<Events>
+										<Event name="StartChoice">СоглашениеНачалоВыбора</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="Выполнить_Т" id="226">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.Выполнить_Т</CommandName>
+							<ExtendedTooltip name="Выполнить_ТРасширеннаяПодсказка" id="227"/>
+						</Button>
+					</ChildItems>
+				</Page>
 			</ChildItems>
 		</Pages>
 		<UsualGroup name="РазделительШ1" id="33">
@@ -663,6 +716,34 @@
 					<ContextMenu name="Декорация2КонтекстноеМеню" id="36"/>
 					<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="37"/>
 				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа9" id="230">
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="231"/>
+			<ChildItems>
+				<LabelDecoration name="Декорация3" id="232">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Эта кнопка очистит все поля данной обработки!</v8:content>
+						</v8:item>
+					</Title>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<VerticalAlign>Center</VerticalAlign>
+					<ContextMenu name="Декорация3КонтекстноеМеню" id="233"/>
+					<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="234"/>
+				</LabelDecoration>
+				<Button name="ОчиститьОбработку" id="228">
+					<Type>UsualButton</Type>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<CommandName>Form.Command.ОчиститьОбработку</CommandName>
+					<ExtendedTooltip name="ОчиститьОбработкуРасширеннаяПодсказка" id="229"/>
+				</Button>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
@@ -719,6 +800,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗаполнитьТестовымиДанными</Action>
+		</Command>
+		<Command name="Выполнить_Т" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Выполнить_Т</Action>
+		</Command>
+		<Command name="ОчиститьОбработку" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить обработку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить обработку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьОбработку</Action>
 		</Command>
 	</Commands>
 </Form>
