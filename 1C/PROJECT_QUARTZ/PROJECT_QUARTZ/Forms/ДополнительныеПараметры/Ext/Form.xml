@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Заполнение дополнительных параметров</v8:content>
+		</v8:item>
+	</Title>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="ПутьВременныхФайлов" id="1">
+			<DataPath>Объект.ПутьJSONФайла</DataPath>
+			<ChoiceButton>true</ChoiceButton>
+			<ClearButton>true</ClearButton>
+			<OpenButton>true</OpenButton>
+			<ContextMenu name="ПутьВременныхФайловКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПутьВременныхФайловРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="OnChange">ПутьJSONФайлаПриИзменении</Event>
+				<Event name="StartChoice">ПутьJSONФайлаНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="ПутьBATФайла" id="4">
+			<DataPath>Объект.ПутьBATФайла</DataPath>
+			<ChoiceButton>true</ChoiceButton>
+			<ClearButton>true</ClearButton>
+			<OpenButton>true</OpenButton>
+			<ContextMenu name="ПутьBATФайлаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ПутьBATФайлаРасширеннаяПодсказка" id="6"/>
+			<Events>
+				<Event name="OnChange">ПутьBATФайлаПриИзменении</Event>
+				<Event name="StartChoice">ПутьBATФайлаНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<CommandBar name="Группа1" id="9">
+			<HorizontalStretch>false</HorizontalStretch>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<GroupVerticalAlign>Center</GroupVerticalAlign>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="10"/>
+			<ChildItems>
+				<Button name="Далее" id="7">
+					<Type>CommandBarButton</Type>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<CommandName>Form.Command.Далее</CommandName>
+					<BackColor>0:b751d4e6-b4e2-47ea-9bbe-e05f6df13b08</BackColor>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Далее</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ДалееРасширеннаяПодсказка" id="8"/>
+				</Button>
+				<Button name="ЗаполнитьПоУмолчанию" id="11">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ЗаполнитьПоУмолчанию</CommandName>
+					<ExtendedTooltip name="ЗаполнитьПоУмолчаниюРасширеннаяПодсказка" id="12"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.PROJECT_QUARTZ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Далее" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Далее</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Далее</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Далее</Action>
+		</Command>
+		<Command name="ЗаполнитьПоУмолчанию" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по умолчанию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по умолчанию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПоУмолчанию</Action>
+		</Command>
+	</Commands>
+</Form>
