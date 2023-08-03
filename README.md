@@ -162,6 +162,9 @@ I've had this idea for a long time now.. I want to make this app serve a lot of 
 <b>02.08.2023</b> <br><br>
 CHANGES: I decided to integrate one of my previous works into the PROJECT_QUARTZ. (<b>NODEJS_1C</b>). So.. about how 1C part gonna work - I will create <b>GLOBAL EXTERNAL MODULE</b> that will provide all the functions i'll sooner or later need. That's it. Little by little I will expand and add different functions to 1C app part, but for now I think I need everything in order to move to the another parts of the application... Speaking of another parts of the app - I think it's time to work on server and database!
 <br><br>
+<b>03.08.2023</b> <br><br>
+1C UPDATE: Working on a system thet will allow to write states of some object before and after changes. Also working on writing the data into the JSON-file.
+<br><br>
 <b>... ... ... ... ...</b> <br><br>
 
 
