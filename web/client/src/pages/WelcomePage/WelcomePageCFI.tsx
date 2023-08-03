@@ -12,12 +12,10 @@ const e6 = require("../../assets/elements/element6.png");
 const e7 = require("../../assets/elements/element7.png"); */
 const codeName = ['P','R','O','J','E','C','T',' ','Q','U','A','R','T','Z',' '];
 const hiddenMessage = 
-['A', 'c', 't', 'e', 'u', 's', ' ', 
-'M', 'a', 'g', 'e', 'l', 's', 'i', 'u', 's', ' ', 
-'O', 'r', 'm', 'e', 'n', 'u', 's', ' ',
-'L', 'y', 'c', 'a', 's', ' ', 
-'N', 'i', 'c', 'o', 'n', ' ', 
-'M', 'i', 'm', 'o', 'n', ' '];
+['З', 'а', 'з', 'а', 'с', ' ',
+'З', 'а', 'з', 'а', 'с', ' ', 
+'Н', 'а', 'с', 'а', 'т', 'а', 'н', 'а', 'д', 'а', ' ',
+'З', 'а', 'з', 'а','с', ' '];
 
 const WelcomePageC = () => {
     return (

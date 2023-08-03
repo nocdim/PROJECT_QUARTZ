@@ -67,25 +67,24 @@
             align-items: flex-end;
             width: 100px;
             height: 100px;
-            opacity: 0.666;
+            opacity: 0.333;
             z-index: 12;
 
             transform: rotate(var(--angle));
-            animation: rotationBackwards 30s linear 0s infinite normal forwards;
+            animation: rotationBackwards 30s linear 0s infinite normal forwards, blur 1s ease-in 0s infinite normal forwards;
 
             .rotatingElementWrapper {
                 position: absolute;
                 width: 0px;
                 height: 0px;
-                margin: 0px 0px 0px 0px;
+                margin: 500px 0px 500px 0px;
                 opacity: 0%;
-                transition: margin 2.5s ease-in-out, opacity 2s ease-out;
+                transition: margin 2.5s ease-in-out, opacity 1s ease-out;
 
                 .rotatingElement {
-                    font-size: 70px;
-                    font-family: 'Inconsolata', monospace;
-                    color: #f00;
-                    font-weight: 500;
+                    font-size: 150px;
+                    font-family: 'Rubik Glitch', cursive;
+                    color: rgb(187, 187, 187);
                     z-index: 19;
                     transform: rotate(var(--angle));
                 }
@@ -116,7 +115,7 @@
     }
 
     .entity:hover .path2 .rotatingElementWrapper {
-        margin: 1200px 1200px 0px 0px;
+        margin: 1300px 1300px 0px 0px;
         opacity: 100%;
         font-family: 'Inconsolata', monospace !important;
     }
