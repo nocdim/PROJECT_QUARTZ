@@ -166,6 +166,9 @@ CHANGES: I decided to integrate one of my previous works into the PROJECT_QUARTZ
 1C UPDATE: Working on a system thet will allow to write states of some object before and after changes. Also working on writing the data into the JSON-file.
 CSS UPDATE: Correcting some stuff, <b>BUT THE FINAL ADJUSTMENTS WILL BE WHEN I FINISH THE LOGO</b>
 <br><br>
+<b>04.08.2023</b> <br><br>
+Necessary part of 1C is now complete and ready to be integrated with the web. The next step will be writing API and backend part of my website and after that creating .bat files to connect 1C to JS/TS.
+<br><br>
 <b>... ... ... ... ...</b> <br><br>
 
 

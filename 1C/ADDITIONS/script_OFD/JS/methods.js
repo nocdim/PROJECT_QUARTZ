@@ -5,6 +5,7 @@ import fs from 'fs';
 const {
     secret_link_log,
     secret_login,
+    secret_login2,
     secret_password,
     secret_link_shifts,
     secret_link_receipts,
@@ -293,6 +294,10 @@ async function getCashBoxKKM(cashBoxKKM) {
     switch (cashBoxKKM) {
         case 'Внуково 6 ККМ1':
             return 868731;
+        case 'ЕК Толмачёво ВВЛ 2 ГТ':
+            return 744335;
+        case 'Внуково 5 ККМ2 ГТ':
+            return 906251;
         default:
             //console.log("ERROR - CASHBOXKKM " + cashBoxKKM + " IS NOT SUPPORTED!");
             throw new Error("ERROR - CASHBOXKKM " + cashBoxKKM + " IS NOT SUPPORTED!");

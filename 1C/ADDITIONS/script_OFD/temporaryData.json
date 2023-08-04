@@ -1,1 +1,7 @@
-" "
+{
+	"Organization": "Гранд-Трейд ООО",
+	"CashBoxKKM": "АВК Домодедово 4 ККМ 3 стар юр.л.ИБ",
+	"DateFrom": "2002-01-01",
+	"DateTo": "2002-01-01",
+	"DocumentType": "Receipt"
+}
