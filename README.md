@@ -167,7 +167,7 @@ CHANGES: I decided to integrate one of my previous works into the PROJECT_QUARTZ
 CSS UPDATE: Correcting some stuff, <b>BUT THE FINAL ADJUSTMENTS WILL BE WHEN I FINISH THE LOGO</b>
 <br><br>
 <b>04.08.2023</b> <br><br>
-Necessary part of 1C is now complete and ready to be integrated with the web. The next step will be writing API and backend part of my website and after that creating .bat files to connect 1C to JS/TS.
+Necessary part of 1C is now complete and ready to be integrated with the web. The next step will be writing API and backend part of my website and after that creating .bat files to connect 1C to JS/TS. Also I expanded the JS part for 1C OFD section.
 <br><br>
 <b>... ... ... ... ...</b> <br><br>
 
