@@ -95,8 +95,8 @@
 
 &НаСервере
 Процедура ЗаполнитьПоУмолчаниюНаСервере()
-	Объект.ПутьJSONФайла = "C:\Users\nochevkin\Desktop\testingNodeJS_1C\temporaryData.json";
-	Объект.ПутьBATФайла = "C:\Users\nochevkin\Desktop\testingNodeJS_1C\execute.bat";
+	Объект.ПутьJSONФайла = "C:\Users\nochevkin\Desktop\app\PROJECT_QUARTZ\1C\ADDITIONS\script_OFD\temporaryData.json";
+	Объект.ПутьBATФайла = "C:\Users\nochevkin\Desktop\app\PROJECT_QUARTZ\1C\ADDITIONS\script_OFD\execute.bat";
 КонецПроцедуры
 
 

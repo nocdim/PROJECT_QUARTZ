@@ -422,17 +422,6 @@
 												</InputField>
 											</ChildItems>
 										</Table>
-										<InputField name="ЧековНайденоВОФД" id="134">
-											<DataPath>Объект.ЧековНайденоВОФД</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Чеков найдено из ОФД</v8:content>
-												</v8:item>
-											</Title>
-											<ContextMenu name="ЧековНайденоВОФДКонтекстноеМеню" id="135"/>
-											<ExtendedTooltip name="ЧековНайденоВОФДРасширеннаяПодсказка" id="136"/>
-										</InputField>
 										<Table name="НайденныеСмены" id="137">
 											<TitleLocation>Auto</TitleLocation>
 											<ReadOnly>true</ReadOnly>
@@ -519,6 +508,30 @@
 												</InputField>
 											</ChildItems>
 										</Table>
+										<UsualGroup name="Группа10" id="235">
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="236"/>
+											<ChildItems>
+												<InputField name="ЧековНайденоВОФД" id="134">
+													<DataPath>Объект.ЧековНайденоВОФД</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Чеков найдено из ОФД</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ЧековНайденоВОФДКонтекстноеМеню" id="135"/>
+													<ExtendedTooltip name="ЧековНайденоВОФДРасширеннаяПодсказка" id="136"/>
+												</InputField>
+												<InputField name="СуммаНайденныхЧековОФД" id="237">
+													<DataPath>Объект.СуммаНайденныхЧековОФД</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<ContextMenu name="СуммаНайденныхЧековОФДКонтекстноеМеню" id="238"/>
+													<ExtendedTooltip name="СуммаНайденныхЧековОФДРасширеннаяПодсказка" id="239"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
 									</ChildItems>
 								</Page>
 								<Page name="Группа6" id="171">
@@ -754,6 +767,209 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:use>false</dcsset:use>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиНомерСтроки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиСтатус</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиСменаЧека</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиНомер</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиДатаЧека</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиСумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиПризнакРасчета</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиСпособОплаты</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиНоменклатура</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиЦенаНоменклатуры</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиКоличествоНоменклатуры</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.НайденныеЧеки.ЧекНайденВБазе</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">666</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#B1B1B1</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиНомерСтроки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиСтатус</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиСменаЧека</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиНомер</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиДатаЧека</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиСумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиПризнакРасчета</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиСпособОплаты</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиНоменклатура</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиЦенаНоменклатуры</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиКоличествоНоменклатуры</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.НайденныеЧеки.ЧекНайденВБазе</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#AAFFAA</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиНомерСтроки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиСтатус</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиСменаЧека</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиНомер</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиДатаЧека</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиСумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиПризнакРасчета</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиСпособОплаты</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиНоменклатура</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиЦенаНоменклатуры</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиКоличествоНоменклатуры</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.НайденныеЧеки.ЧекНайденВБазе</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">-1</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FFC14D</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиНомерСтроки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиСтатус</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиСменаЧека</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиНомер</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиДатаЧека</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиСумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиПризнакРасчета</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиСпособОплаты</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиНоменклатура</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиЦенаНоменклатуры</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>НайденныеЧекиКоличествоНоменклатуры</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.НайденныеЧеки.ЧекНайденВБазе</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FFAFAF</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
 		<Command name="НайтиДанныеИзОФД" id="1">

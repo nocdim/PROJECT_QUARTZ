@@ -32,11 +32,14 @@ async function selectCorrectData(data1C) {
     // testing...
     let cabinetID;
     let cashBoxKKM;
+    let correctLogin;
+    correctLogin = await getCorrectLogin(data1C.Organization);
     cabinetID = await getCabinetID(data1C.Organization);
     cashBoxKKM = await getCashBoxKKM(data1C.CashBoxKKM);
     // testing
     //console.log(cabinetID, cashBoxKKM)
     let dataObj = {
+        correctLogin_key: correctLogin,
         dateFrom_key: data1C.DateFrom,
         dateTo_key: data1C.DateTo,
         documentType_key: data1C.DocumentType,
@@ -52,7 +55,7 @@ async function fetchAndWriteDataFromWeb(selectedData) {
     axios.get(secret_link_log).then((res) => {
         let csrf_token = res.data.csrf;
         axios.post(secret_link_log, {
-            login: secret_login,
+            login: selectedData.correctLogin_key,
             password: secret_password,
             externalSystem: null,
         }, {
@@ -62,7 +65,7 @@ async function fetchAndWriteDataFromWeb(selectedData) {
         }).then((res) => {
             if (res.status == 200 && res.data.data.userId !== null) {
                 axios.post(secret_link_log, {
-                    login: secret_login,
+                    login: selectedData.correctLogin_key,
                     password: secret_password,
                     externalSystem: null,
                     cabinetID: selectedData.cabinetID_key
@@ -112,7 +115,7 @@ const pushDataInArray = async (res, selectedData, constructedLink, requiredCooki
                     Cookie: requiredCookies,
                 }
             }).then((res) => {
-                for (let i = 0; i < res.data.data.collection.length - 1; i++) {
+                for (let i = 0; i < res.data.data.collection.length; i++) {
                     if (res.data.data.collection[i].type === 3) {
                         dataArr.push(res.data.data.collection[i]);
                         console.log("||| Object successfully added ||| --> Data: SUM = "
@@ -186,8 +189,8 @@ const addItemsToReceipts = async (array, requiredCookies, element, /*retrying = 
 const tryAgain = async (err, array, cookies, elementNum) => {
     console.log(err + "\n" + "Unexpected error occured..." + "\n"
         + "Retrying to get information from where program collapsed..." + "\n"
-        + "Data before collapse --> "+ "\n" + err + "\n" + elementNum + "\n");
-        //let retrying = true;
+        + "Data before collapse --> " + "\n" + err + "\n" + elementNum + "\n");
+    //let retrying = true;
     await addItemsToReceipts(array, cookies, elementNum/*, retrying*/);
 }
 
@@ -274,6 +277,26 @@ const constructLink = (selectedData, pageNumber, linkType) => {
     }
 }
 
+async function getCorrectLogin(organization) {
+    switch (organization) {
+        case 'СПБ Ритейл ':
+            return secret_login;
+        case 'Гранд-Трейд ООО':
+            return secret_login;
+        case 'Гранд-Трейд':
+            return secret_login;
+        case 'МОКИТО':
+            return secret_login;
+        case 'ЕКБ Ритейл':
+            return secret_login2;
+        case 'ЭРИАЛ ТРЕЙД':
+            return secret_login2;
+        default:
+            //console.log("ERROR - ORGANIZATION " + organization + " IS NOT SUPPORTED!");
+            throw new Error("ERROR - COULDN'T SELECT THE RIGHT LOGIN!");
+    }
+}
+
 async function getCabinetID(organization) {
     switch (organization) {
         case 'СПБ Ритейл ':
@@ -284,6 +307,10 @@ async function getCabinetID(organization) {
             return 337550;
         case 'МОКИТО':
             return 329194;
+        case 'ЕКБ Ритейл':
+            return 177629;
+        case 'ЭРИАЛ ТРЕЙД':
+            return 155615;
         default:
             //console.log("ERROR - ORGANIZATION " + organization + " IS NOT SUPPORTED!");
             throw new Error("ERROR - ORGANIZATION " + organization + " IS NOT SUPPORTED!");
@@ -292,12 +319,29 @@ async function getCabinetID(organization) {
 
 async function getCashBoxKKM(cashBoxKKM) {
     switch (cashBoxKKM) {
-        case 'Внуково 6 ККМ1':
-            return 868731;
-        case 'ЕК Толмачёво ВВЛ 2 ГТ':
-            return 744335;
+        // Внуково
+        case 'Внуково 4 ГТ':
+            return 906244;
         case 'Внуково 5 ККМ2 ГТ':
             return 906251;
+        case 'Внуково 6 ККМ1':
+            return 868731;
+        case 'Внуково 6 ККМ1 ГТ':
+            return 868731;
+        case 'Внуково 7 ККМ1 ГТ':
+            return 877851;
+        // Толмачево
+        case 'ЕК Толмачёво ВВЛ 2 ГТ':
+            return 744335;
+        case 'ЕК Толмачёво 4 ККМ Гранд-Трейд':
+            return 744331;
+        case 'ЕК Толмачёво Прилет ГТ':
+            return 887651;
+        // Курский
+        case 'ТМ Курский ГТ':
+            return 877848;
+        // Домодедово
+        // Вятская
         default:
             //console.log("ERROR - CASHBOXKKM " + cashBoxKKM + " IS NOT SUPPORTED!");
             throw new Error("ERROR - CASHBOXKKM " + cashBoxKKM + " IS NOT SUPPORTED!");
