@@ -169,6 +169,9 @@ CSS UPDATE: Correcting some stuff, <b>BUT THE FINAL ADJUSTMENTS WILL BE WHEN I F
 <b>04.08.2023</b> <br><br>
 Necessary part of 1C is now complete and ready to be integrated with the web. The next step will be writing API and backend part of my website and after that creating .bat files to connect 1C to JS/TS. Also I expanded the JS part for 1C OFD section.
 <br><br>
+<b>07.08.2023</b> <br><br>
+Little changes made to 1c main form (stylistic changes, fixed bugs). Also completed the JS script for 1c OFD receipt checkup. The only thing left there is a second attempt to process the info after collapse...
+<br><br>
 <b>... ... ... ... ...</b> <br><br>
 
 
