@@ -18,7 +18,7 @@ BackEnd:
 NodeJS + NestJS + express + Typescript
 
 Database:
-MongoDB
+PostgreSQL
 
 Main program:
 1C:Enterprise
@@ -36,7 +36,7 @@ ReactJS + Redux + Typescript
 NodeJS + NestJS + экспресс + Typescript
 
 База данных:
-~~МонгоДБ~~ CockroachDB
+PostgreSQL
 
 Основная программа:
 1С:Предприятие
@@ -54,7 +54,7 @@ ReactJS + Redux + Typescript
 NodeJS + NestJS + 익스프레스 + Typescript
 
 데이터 베이스:
-~~몽고DB~~ CockroachDB
+PostgreSQL
 
 주요 프로그램:
 1C:엔터프라이즈
@@ -72,7 +72,7 @@ ReactJS + Redux + Typescript
 NodeJS + NestJS + Express + Typescript
 
 数据库：
-~~MongoDB~~ CockroachDB
+PostgreSQL
 
 主要程序：
 1C：企业
@@ -90,7 +90,7 @@ ReactJS + Redux + Typescript
 NodeJS + NestJS + Express + Typescript
 
 データベース:
-~~MongoDB~~ CockroachDB 
+PostgreSQL
 
 主なプログラム:
 1C:エンタープライズ
