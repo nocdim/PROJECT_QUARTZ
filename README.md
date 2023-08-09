@@ -175,7 +175,7 @@ Little changes made to 1c main form (stylistic changes, fixed bugs). Also comple
 <b>08.08.2023</b> <br><br>
 *crying noises* Unfortunately MongoDB is no longer available in Russia... I wanted to use MongoDB to deploy my database, but I guess that will never happen. So I decided to switch to CockroachDB. (It's a shame that developers of MongoDB banned russian people from using their own products ( not everyone supports current situation... )) I started developing server side of application slowly but surely!! Also I want to make some sort of graph that will show the usage of programming languages day by day in my application. I already downloaded the archives, all I need to do is to set up the database, found a way to count lines of code of files with certain extensions and find out how to put the stats on the graph!
 <br><br>
-<b>08.08.2023</b> <br><br>
+<b>09.08.2023</b> <br><br>
 GLOBAL SUPER ULTRA MULTI INCREDIBLE CHANGES... <b>NO COCKROACHDB</b> Primary reason for me to switch to another solution is the fact that the more I use cockroachDB the more money I pay. So I decided to use the same old POSTGRESQL. I know how to work in it somewhat, I've done projects using POSTGRESQL before, so I think this decision is the right one. Another notes: I added a scheme of how the application should work. Functionality will grow and improve (at least I hope so). I started to shape the backend part of the application, but the process will go slowly.. (I'm making this project while at work and setting up a DB is not really possible.)
 <br><br>
 <b>... ... ... ... ...</b> <br><br>
