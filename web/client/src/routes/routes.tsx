@@ -8,6 +8,21 @@ import SearchBar from "../components/SearchBar/SearchBar";
 import WelcomePage from "../pages/WelcomePage/WelcomePageFI";
 import WelcomePageC from "../pages/WelcomePage/WelcomePageCFI";
 
+import AboutPage from "../pages/AboutPage/AboutPageFI";
+import AboutPageC from "../pages/AboutPage/AboutPageCFI";
+
+import AdminPage from "../pages/AdminPage/AdminPageFI";
+import AdminPageC from "../pages/AdminPage/AdminPageCFI";
+
+import DocumentsPage from "../pages/DocumentsPage/DocumentsPageFI";
+import DocumentsPageC from "../pages/DocumentsPage/DocumentsPageCFI";
+
+import HistoricalGalleryPage from "../pages/HistoricalGalleryPage/HistoricalGalleryPageFI";
+import HistoricalGalleryPageC from "../pages/HistoricalGalleryPage/HistoricalGalleryPageCFI";
+
+import StatisticsPage from "../pages/StatisticsPage/StatisticsPageFI";
+import StatisticsPageC from "../pages/StatisticsPage/StatisticsPageCFI";
+
 import HomePage from "../pages/HomePage/HomePageFI";
 import HomePageC from "../pages/HomePage/HomePageCFI";
 
@@ -19,8 +34,12 @@ import { IFooter } from "../interfaces/IFooter";
 import {
     DEFAULT_ROUTE,
     HOME_ROUTE,
-    CHANGES_ROUTE,
+    DOCUMENTS_ROUTE,
     UNDEFINED_ROUTE,
+    ABOUT_ROUTE,
+    ADMIN_ROUTE,
+    GALLERY_ROUTE,
+    STATISTICS_ROUTE
 } from '../utils/consts.js';
 
 const logoImg = require("../assets/logo.png");
@@ -28,11 +47,12 @@ const logoImg = require("../assets/logo.png");
 ////////////////////////////////////////////////////////////////////////////////
 
 export const authAdminRoutes = [
-
-];
-
-export const authUserRoutes = [
-
+    {
+        path: ADMIN_ROUTE,
+        element: <AdminPage 
+            content={AdminPageC()}        
+        />
+    },
 ];
 
 export const publicRoutes = [
@@ -49,6 +69,30 @@ export const publicRoutes = [
             content={HomePageC()}
             sidebar={SideBar()}
         />,
+    },
+    {
+        path: DOCUMENTS_ROUTE,
+        element: <DocumentsPage 
+            content={DocumentsPageC()}
+        />,
+    },
+    {
+        path: ABOUT_ROUTE,
+        element: <AboutPage 
+            content={AboutPageC()}
+        />
+    },
+    {
+        path: GALLERY_ROUTE,
+        element: <HistoricalGalleryPage 
+            content={HistoricalGalleryPageC()}
+        />
+    },
+    {
+        path: STATISTICS_ROUTE,
+        element: <StatisticsPage 
+            content={StatisticsPageC()}
+        />
     },
     {
         path: UNDEFINED_ROUTE,

@@ -4,7 +4,9 @@ import { AppService } from './app.service';
 import { ProgLanguageModule } from './prog-language/prog-language.module';
 
 @Module({
-  imports: [ProgLanguageModule],
+  imports: [
+    ProgLanguageModule
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
