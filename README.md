@@ -36,7 +36,7 @@ ReactJS + Redux + Typescript
 NodeJS + NestJS + экспресс + Typescript
 
 База данных:
-МонгоДБ
+~~МонгоДБ~~ CockroachDB
 
 Основная программа:
 1С:Предприятие
@@ -54,7 +54,7 @@ ReactJS + Redux + Typescript
 NodeJS + NestJS + 익스프레스 + Typescript
 
 데이터 베이스:
-몽고DB
+~~몽고DB~~ CockroachDB
 
 주요 프로그램:
 1C:엔터프라이즈
@@ -72,7 +72,7 @@ ReactJS + Redux + Typescript
 NodeJS + NestJS + Express + Typescript
 
 数据库：
-MongoDB
+~~MongoDB~~ CockroachDB
 
 主要程序：
 1C：企业
@@ -90,7 +90,7 @@ ReactJS + Redux + Typescript
 NodeJS + NestJS + Express + Typescript
 
 データベース:
-MongoDB
+~~MongoDB~~ CockroachDB 
 
 主なプログラム:
 1C:エンタープライズ
@@ -172,11 +172,18 @@ Necessary part of 1C is now complete and ready to be integrated with the web. Th
 <b>07.08.2023</b> <br><br>
 Little changes made to 1c main form (stylistic changes, fixed bugs). Also completed the JS script for 1c OFD receipt checkup. The only thing left there is a second attempt to process the info after collapse...
 <br><br>
+<b>08.08.2023</b> <br><br>
+*crying noises* Unfortunately MongoDB is no longer available in Russia... I wanted to use MongoDB to deploy my database, but I guess that will never happen. So I decided to switch to CockroachDB. (It's a shame that developers of MongoDB banned russian people from using their own products ( not everyone supports current situation... )) I started developing server side of application slowly but surely!! Also I want to make some sort of graph that will show the usage of programming languages day by day in my application. I already downloaded the archives, all I need to do is to set up the database, found a way to count lines of code of files with certain extensions and find out how to put the stats on the graph!
+<br><br>
+<b>08.08.2023</b> <br><br>
+GLOBAL SUPER ULTRA MULTI INCREDIBLE CHANGES... <b>NO COCKROACHDB</b> Primary reason for me to switch to another solution is the fact that the more I use cockroachDB the more money I pay. So I decided to use the same old POSTGRESQL. I know how to work in it somewhat, I've done projects using POSTGRESQL before, so I think this decision is the right one. Another notes: I added a scheme of how the application should work. Functionality will grow and improve (at least I hope so). I started to shape the backend part of the application, but the process will go slowly.. (I'm making this project while at work and setting up a DB is not really possible.)
+<br><br>
 <b>... ... ... ... ...</b> <br><br>
 
 
 <h2>DEVELOPMENT ARCHIVE:</h2>
-(This is where I post screenshots of the application and other different stuff that I'm working on, so you can see the progress..)<br><br>
+![alt text](https://github.com/nocdim/RRT-NNET-M_ChangeObserver_1C/blob/main/developmentHistory/scheme_03082023.svg)
+<br><br>
 
 
 <b>THIS SECTION WILL BE FILLED WHEN THE PROJECT IS NEAR COMPLETION</b> <br><br>
