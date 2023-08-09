@@ -182,6 +182,7 @@ GLOBAL SUPER ULTRA MULTI INCREDIBLE CHANGES... <b>NO COCKROACHDB</b> Primary rea
 
 
 <h2>DEVELOPMENT ARCHIVE:</h2>
+
 ![alt text](https://github.com/nocdim/RRT-NNET-M_ChangeObserver_1C/blob/main/developmentHistory/scheme_03082023.svg)
 <br><br>
 
