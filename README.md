@@ -178,6 +178,9 @@ Little changes made to 1c main form (stylistic changes, fixed bugs). Also comple
 <b>09.08.2023</b> <br><br>
 GLOBAL SUPER ULTRA MULTI INCREDIBLE CHANGES... <b>NO COCKROACHDB</b> Primary reason for me to switch to another solution is the fact that the more I use cockroachDB the more money I pay. So I decided to use the same old POSTGRESQL. I know how to work in it somewhat, I've done projects using POSTGRESQL before, so I think this decision is the right one. Another notes: I added a scheme of how the application should work. Functionality will grow and improve (at least I hope so). I started to shape the backend part of the application, but the process will go slowly.. (I'm making this project while at work and setting up a DB is not really possible.). <b>UPDATE:</b> I expanded the variety of web pages on the web site. In total right now we have "AboutPage", "AdminPage", "DocumentsPage", "ErrorPage", "HistoricalGalleryPage", "HomePage", "StatisticsPage" and "WelcomePage".
 <br><br>
+<b>11.08.2023</b> <br><br>
+I finally fixed the problem with NavBar, Footer and Sidebar. Previously I Couldn't put them as reactElements on the page for some reason, well that got fixed. And from this point app is ready to be fully designed.
+<br><br>
 <b>... ... ... ... ...</b> <br><br>
 
 
