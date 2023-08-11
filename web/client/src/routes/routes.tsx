@@ -1,9 +1,7 @@
 import NavBar from "../components/NavBar/NavBarFI";
-import Footer from "../components/Footer/FooterFI";
+
 import About from "../components/About/AboutFI";
 import SideBar from "../components/SideBar/SideBarFI";
-import Logotype from "../components/logo/LogoFI";
-import SearchBar from "../components/SearchBar/SearchBar";
 
 import WelcomePage from "../pages/WelcomePage/WelcomePageFI";
 import WelcomePageC from "../pages/WelcomePage/WelcomePageCFI";
@@ -29,8 +27,6 @@ import HomePageC from "../pages/HomePage/HomePageCFI";
 import ErrorPage from "../pages/ErrorPage/ErrorPageFI";
 import ErrorPageC from "../pages/ErrorPage/ErrorPageCFI";
 
-import { IFooter } from "../interfaces/IFooter";
-
 import {
     DEFAULT_ROUTE,
     HOME_ROUTE,
@@ -41,6 +37,7 @@ import {
     GALLERY_ROUTE,
     STATISTICS_ROUTE
 } from '../utils/consts.js';
+import Footer from "../components/Footer/FooterFI";
 
 const logoImg = require("../assets/logo.png");
 
@@ -50,8 +47,26 @@ export const authAdminRoutes = [
     {
         path: ADMIN_ROUTE,
         element: <AdminPage 
-            content={AdminPageC()}        
+            navbar={NavBar(
+                logoImg,
+                )}
+            content={AdminPageC()}
+            footer={Footer(
+                logoImg,
+            )}
         />
+    },
+    {
+        path: DOCUMENTS_ROUTE,
+        element: <DocumentsPage 
+            navbar={NavBar(
+                logoImg,
+            )}
+            content={DocumentsPageC()}
+            footer={Footer(
+                logoImg,
+            )}
+        />,
     },
 ];
 
@@ -67,31 +82,45 @@ export const publicRoutes = [
         path: HOME_ROUTE,
         element: <HomePage 
             content={HomePageC()}
-            sidebar={SideBar()}
-        />,
-    },
-    {
-        path: DOCUMENTS_ROUTE,
-        element: <DocumentsPage 
-            content={DocumentsPageC()}
+            sidebar={SideBar(
+                logoImg
+            )}
         />,
     },
     {
         path: ABOUT_ROUTE,
         element: <AboutPage 
+            navbar={NavBar(
+                logoImg,
+            )}
             content={AboutPageC()}
+            footer={Footer(
+                logoImg
+            )}
         />
     },
     {
         path: GALLERY_ROUTE,
         element: <HistoricalGalleryPage 
+            navbar={NavBar(
+                logoImg,
+            )}
             content={HistoricalGalleryPageC()}
+            footer={Footer(
+                logoImg
+            )}
         />
     },
     {
         path: STATISTICS_ROUTE,
         element: <StatisticsPage 
+            navbar={NavBar(
+                logoImg,
+            )}
             content={StatisticsPageC()}
+            footer={Footer(
+                logoImg,
+            )}
         />
     },
     {

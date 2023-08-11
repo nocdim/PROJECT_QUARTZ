@@ -9,9 +9,6 @@ const AppRouter = () => {
             {role === 'ADMIN' && authAdminRoutes.map(({path, element}) => 
                 <Route key={path} exact path={path} element={element}/>
             )}
-            {role === 'USER' && authUserRoutes.map(({path, element}) => 
-                <Route key={path} exact path={path} element={element}/>
-            )}
             {publicRoutes.map(({path, element}) => 
                 <Route key={path} exact path={path} element={element}/>
             )}

@@ -2,7 +2,7 @@ import { IFooter } from "./IFooter";
 import { INavBar } from "./INavBar";
 
 export interface IPageTemplate {
-    navbar?: INavBar;
+    navbar?: React.ReactNode;
     content: React.ReactNode;
-    footer?: IFooter;
+    footer?: React.ReactNode;
 }
