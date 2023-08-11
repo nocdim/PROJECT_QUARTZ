@@ -1,0 +1,51 @@
+.Appfalse {
+    .ToggleNFSContainer {
+        position: fixed;
+        right: 60px;  
+        height: 100%;
+        width: 140px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        z-index: 30;
+        
+        .toggleNfalse {
+
+        }
+    
+        .toggleFfalse {
+    
+        }
+    
+        .toggleSfalse {
+    
+        }
+    }
+}
+
+.Apptrue {
+    .ToggleNFSContainer {
+        position: fixed;
+        right: 60px;  
+        height: 100%;
+        width: 140px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        z-index: 30;
+        
+        .toggleNfalse {
+    
+        }
+    
+        .toggleFfalse {
+    
+        }
+    
+        .toggleSfalse {
+    
+        }
+    }
+}
+
+

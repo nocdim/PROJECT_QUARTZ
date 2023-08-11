@@ -9,7 +9,6 @@ const Toggle = ({ img, theme, onClick }: IToggle) => {
   if (rotatingElements.length !== 0) {
     angle = 360 / rotatingElements.length;
   }
-  console.log(angle)
   return (
     <div className={"ToggleContainer" + String(theme)}>
       <img src={img} alt='' className={"toggle" + String(theme)} onClick={onClick} />

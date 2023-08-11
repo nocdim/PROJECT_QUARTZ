@@ -1,9 +1,10 @@
 import React from 'react';
 import { INavBar } from '../../interfaces/INavBar';
+import './NavBar.css';
 
 const NavBar: React.FC<INavBar> = ({logo, searchBar, isOpen}) => {
     return (
-        <div>NavBar</div>
+        <div className='NavBar'>NavBar</div>
     )
 }
 
