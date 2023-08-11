@@ -47,25 +47,13 @@ export const authAdminRoutes = [
     {
         path: ADMIN_ROUTE,
         element: <AdminPage 
-            navbar={NavBar(
-                logoImg,
-                )}
             content={AdminPageC()}
-            footer={Footer(
-                logoImg,
-            )}
         />
     },
     {
         path: DOCUMENTS_ROUTE,
         element: <DocumentsPage 
-            navbar={NavBar(
-                logoImg,
-            )}
             content={DocumentsPageC()}
-            footer={Footer(
-                logoImg,
-            )}
         />,
     },
 ];
@@ -75,7 +63,6 @@ export const publicRoutes = [
         path: DEFAULT_ROUTE,
         element: <WelcomePage
             content={WelcomePageC()}
-            about={About()}
         />,
     },
     {
@@ -90,37 +77,19 @@ export const publicRoutes = [
     {
         path: ABOUT_ROUTE,
         element: <AboutPage 
-            navbar={NavBar(
-                logoImg,
-            )}
             content={AboutPageC()}
-            footer={Footer(
-                logoImg
-            )}
         />
     },
     {
         path: GALLERY_ROUTE,
         element: <HistoricalGalleryPage 
-            navbar={NavBar(
-                logoImg,
-            )}
             content={HistoricalGalleryPageC()}
-            footer={Footer(
-                logoImg
-            )}
         />
     },
     {
         path: STATISTICS_ROUTE,
         element: <StatisticsPage 
-            navbar={NavBar(
-                logoImg,
-            )}
             content={StatisticsPageC()}
-            footer={Footer(
-                logoImg,
-            )}
         />
     },
     {
